@@ -1,0 +1,71 @@
+v0.7.3
+  - 3.3.3 changes
+
+v0.7.2
+  - A fix for the fix (that should have been fixed)
+
+v0.7.1
+  - Fix missing title bug
+  - Fix localization bug
+
+v0.7.0
+  - Added new 3.3 items.
+
+v0.6.9
+  - Added new 3.2.2 items.
+
+v0.6.8
+  - Added new 3.2 items and changes.
+
+v0.6.7
+  - Added new 3.1.2 items
+  - Made some changes to support PetListPlus. Should play nicely now.
+
+v0.6.6
+  - Added in a configuration menu. Open from the Game menu -> Interface -> Addons -> The Collector. This will allow you to decide if you want to show any buttons on the interface, and for the Character window if you want the button located on the left or right of the window.
+
+v0.6.5 
+  - Added in support for Titles. Open from the Toggle button on the character window or with /tc show and select the Title tab.
+
+v0.6
+  - Tooltip information about where to obtain pets/mounts. Hover your mouse over an item to see where to obtain it.
+  - Added in all 3.1 pets and mounts.
+  - Added in Death Knight mounts.
+  - Removed the Filters button. This was mainly a debugging item and was confusing people on its purpose.
+
+v0.5.9
+  - Made changes to support new mount restrictions in 3.0.8
+  - Added button back to pet window
+
+v0.5.8
+  - Added most pets and mounts from WOTLK
+
+v0.5.7
+  - Repackaged files and zipped on a PC. No more Mac filesystem cruft problems now.
+  - Added Headless Horseman's Mount, Rivendare's Deathcharger, Yellow Qiraji Battle Tank.
+
+v0.5.6
+  - Added new patch 3.0.2 achievement rewards - Stinker, Albino Drake, Black War Bear.
+  - Changed code to fix possible problem with tabs.
+
+v0.5.4
+  - Added ability to right-click a missing item and mark it as inactive. Inactive items are tracked in a separate section, and don't count against you as missing items. Right-click an inactive item to mark it as active (missing) again.
+
+v0.5
+  - Stand-alone window now. Open with "/thecollector show" or "/tc show".
+  - Kludged together a new GUI. Let me know what you think.
+  - Added section for "Extras". These are items that are difficult/impossible to obtain.
+
+v0.4.6
+  - Added checks for engineering in mounts and companions.
+  - "Extra" items are not included in the number of items you know. Example - If you know 2 mounts, and one is the Black Qiraji Battle Tank, then the status bar at the bottom of the mount page will read "1 / XX - YY%", instead of "2 / XX - YY%".
+  - Code cleanup, small amount of localization.
+
+v0.4.4
+  - Companions should be almost complete now. Thanks www.warcraftpets.com!
+
+v0.4.2
+  - Mounts should be almost complete now. Thanks www.warcraftmounts.com!
+
+v0.4
+  - Initial public release

@@ -1,0 +1,872 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+ ..\..\FrameXML\UI.xsd">
+  <Script file="ItemsDB\TC-CompanionData.lua" />
+  <Script file="ItemsDB\TC-MountData.lua" />
+  <Script file="ItemsDB\TC-TitleData.lua" />
+  <Script file="TheCollector.lua" />
+  <Script file="TheCollectorConfig.lua" />
+
+  <Button name="TheCollectorScrollFrameButtonTemplate" virtual="true">
+    <Size><AbsDimension x="296" y="38" /></Size>
+    <Anchors>
+      <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT" />
+    </Anchors>
+    <Frames>
+      <Button name="$parentIcon">
+        <Size><AbsDimension x="36" y="36" /></Size>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
+            <Offset><AbsDimension x="25" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+      </Button>
+      <Frame>
+        <Size><AbsDimension x="250" y="36" /></Size>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="$parentIcon" relativePoint="RIGHT">
+            <Offset><AbsDimension x="5" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Layers>
+          <Layer>
+            <!--  <Texture>
+              <Color r="1" g="0" b="0" a="0.5" />
+            </Texture>  -->
+            <FontString name="$parentText" inherits="GameFontHighlightSmall" text="scroll item text">
+              <Anchors>
+                <Anchor point="LEFT" />
+              </Anchors>
+            </FontString>
+            <FontString name="$parentItemID" inherits="GameFontHighlightSmall" hidden="true">
+              <Anchors>
+                <Anchor point="LEFT" />
+              </Anchors>
+            </FontString>
+          </Layer>
+        </Layers>
+      </Frame>
+      <Frame name="$parentDropDownInactivateMenu" inherits="UIDropDownMenuTemplate" id="1">
+        <Scripts>
+          <OnLoad>
+              UIDropDownMenu_Initialize(self, TheCollectorDropDownInactivateMenuOnLoad, "MENU");
+          </OnLoad>
+        </Scripts>
+      </Frame>
+      <Frame name="$parentDropDownActivateMenu" inherits="UIDropDownMenuTemplate" id="2">
+        <Scripts>
+          <OnLoad>
+              UIDropDownMenu_Initialize(self, TheCollectorDropDownActivateMenuOnLoad, "MENU");
+          </OnLoad>
+        </Scripts>
+      </Frame>
+    </Frames>
+    <HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD" />
+    <Scripts>
+      <OnLoad>
+        self:RegisterForClicks("LeftButtonUp", "RightButtonDown");
+      </OnLoad>
+      <OnClick>
+        if ( arg1 == "LeftButton" ) then
+            TheCollectorScrollItemClicked(self);
+        elseif ( arg1 == "RightButton" ) then
+            TheCollectorScollItemRightClicked(self);
+        end
+      </OnClick>
+      <OnEnter>
+          TheCollectorScrollButtonOnEnter(self);
+      </OnEnter>
+      <OnLeave>
+          GameTooltip:Hide();
+      </OnLeave>
+    </Scripts>
+  </Button>
+
+
+  <Button name="TheCollectorScrollHeaderTemplate" hidden="true" virtual="true">
+    <Size><AbsDimension x="285" y="38" /></Size>
+    <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-MinusButton-UP">
+      <Size><AbsDimension x="16" y="16" /></Size>
+      <Anchors>
+        <Anchor point="LEFT">
+          <Offset><AbsDimension x="3" y="0" /></Offset>
+        </Anchor>
+      </Anchors>
+    </NormalTexture>
+    <HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD">
+      <Size><AbsDimension x="16" y="16" /></Size>
+      <Anchors>
+        <Anchor point="LEFT">
+          <Offset><AbsDimension x="3" y="0" /></Offset>
+        </Anchor>
+      </Anchors>
+    </HighlightTexture>
+    <DisabledTexture file="Interface\Buttons\UI-PlusButton-Disabled">
+      <Size><AbsDimension x="16" y="16" /></Size>
+      <Anchors>
+        <Anchor point="LEFT">
+          <Offset><AbsDimension x="3" y="0" /></Offset>
+        </Anchor>
+      </Anchors>
+    </DisabledTexture>
+    <ButtonText name="$parentText">
+      <Anchors>
+        <Anchor point="LEFT">
+          <Offset><AbsDimension x="25" y="0" /></Offset>
+        </Anchor>
+      </Anchors>
+    </ButtonText>
+    <NormalFont style="GameFontHighlightLeft" />
+    <HighlightFont style="GameFontNormalLeft" />
+    <Scripts>
+      <OnClick>
+        TheCollectorScrollHeaderClicked(self:GetText());
+      </OnClick>
+      <OnEnter>
+        TheCollectorScrollHeaderOnEnter(self);
+      </OnEnter>
+      <OnLeave>
+        GameTooltip:Hide();
+      </OnLeave>
+    </Scripts>
+  </Button>
+
+
+  <Frame name="TheCollectorFrame" toplevel="true" enableMouse="true" movable="true" parent="UIParent" hidden="true" >
+    <Size><AbsDimension x="348" y="436" /></Size>
+    <Anchors>
+      <Anchor point="CENTER">
+        <Offset><AbsDimension x="0" y="0" /></Offset>
+      </Anchor>
+    </Anchors>
+    <TitleRegion>
+      <Size><AbsDimension x="348" y="30" /></Size>
+      <Anchors>
+        <Anchor point="TOP" />
+      </Anchors>
+    </TitleRegion>
+    <Layers>
+      <Layer level="ARTWORK">
+        <Texture file="Interface\PaperDollInfoFrame\UI-Character-General-TopLeft">
+          <Size><AbsDimension x="210" y="256" /></Size>
+          <Anchors>
+            <Anchor point="TOPLEFT">
+              <Offset><AbsDimension x="45" y="6" /></Offset>
+            </Anchor>
+          </Anchors>
+          <TexCoords left="0.34" right="1" top="0" bottom="1" />
+        </Texture>
+        <Texture name="testTexture" file="Interface\PaperDollInfoFrame\UI-Character-General-TopRight">
+          <Size><AbsDimension x="128" y="256" /></Size>
+          <Anchors>
+            <Anchor point="TOPLEFT">
+              <Offset><AbsDimension x="-31" y="6" /></Offset>
+            </Anchor>
+          </Anchors>
+        </Texture>
+        <Texture file="Interface\PaperDollInfoFrame\UI-Character-General-TopLeft">
+          <Size><AbsDimension x="256" y="12" /></Size>
+          <Anchors>
+            <Anchor point="TOPLEFT">
+              <Offset><AbsDimension x="-8" y="-250" /></Offset>
+            </Anchor>
+          </Anchors>
+          <TexCoords left="0" right="1" top="0.97" bottom="1" />
+        </Texture>
+        <Texture file="Interface\PaperDollInfoFrame\UI-Character-General-TopRight">
+          <Size><AbsDimension x="128" y="256" /></Size>
+          <Anchors>
+            <Anchor point="TOPRIGHT">
+              <Offset><AbsDimension x="28" y="6" /></Offset>
+            </Anchor>
+          </Anchors>
+        </Texture>
+        <Texture file="Interface\PaperDollInfoFrame\UI-Character-General-TopRight">
+          <Size><AbsDimension x="128" y="12" /></Size>
+          <Anchors>
+            <Anchor point="TOPRIGHT">
+              <Offset><AbsDimension x="28" y="-250" /></Offset>
+            </Anchor>
+          </Anchors>
+          <TexCoords left="0" right="1" top="0.97" bottom="1" />
+        </Texture>
+        <Texture file="Interface\TalentFrame\UI-TalentFrame-BotLeft">
+          <Size><AbsDimension x="256" y="256" /></Size>
+          <Anchors>
+            <Anchor point="BOTTOMLEFT">
+              <Offset><AbsDimension x="-8" y="-82" /></Offset>
+            </Anchor>
+          </Anchors>
+        </Texture>
+        <Texture file="Interface\TalentFrame\UI-TalentFrame-BotRight">
+          <Size><AbsDimension x="128" y="256" /></Size>
+          <Anchors>
+            <Anchor point="BOTTOMRIGHT">
+              <Offset><AbsDimension x="28" y="-82" /></Offset>
+            </Anchor>
+          </Anchors>
+        </Texture>
+      </Layer>
+    </Layers>
+
+
+    <Frames>
+      <Frame name="$parentHeaderFrame">
+        <Size><AbsDimension x="340" y="64" /></Size>
+        <Anchors>
+          <Anchor point="TOP">
+            <Offset><AbsDimension x="0" y="2" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture file="Interface\DialogFrame\UI-DialogBox-Header">
+              <Size><AbsDimension x="340" y="64" /></Size>
+            </Texture>
+            <FontString name="$parentText" inherits="GameFontNormal" text="Your Header Here!">
+              <Anchors>
+                <Anchor point="TOP">
+                  <Offset><AbsDimension x="0" y="-15" /></Offset>
+                </Anchor>
+              </Anchors>
+            </FontString>
+          </Layer>
+        </Layers>
+      </Frame>
+
+
+      <Button>
+        <Size><AbsDimension x="28" y="28" /></Size>
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="TOPLEFT">
+            <Offset><AbsDimension x="2" y="-18"/></Offset>
+          </Anchor>
+        </Anchors>
+        <NormalTexture file="Interface\Buttons\UI-EmptySlot-Disabled"/>
+      </Button>
+
+      <!-- The 'X' close button in the upper right -->
+      <Button inherits="UIPanelCloseButton">
+        <Anchors>
+          <Anchor point="RIGHT" relativePoint="TOPRIGHT">
+            <Offset><AbsDimension x="-2" y="-18"/></Offset>
+          </Anchor>
+        </Anchors>
+      </Button>
+
+      <!-- This is the larger Close button in the lower right -->
+      <Button inherits="UIPanelButtonTemplate" text="COLLECTOR_CLOSE">
+        <Size><AbsDimension x="80" y="22" /></Size>
+        <Anchors>
+          <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT">
+            <Offset><AbsDimension x="-14" y="-1" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnClick>self:GetParent():Hide();</OnClick>
+        </Scripts>
+      </Button>
+
+
+<!--
+      <Button name="$parentFilterInfo">
+        <Size><AbsDimension x="34" y="15" /></Size>
+        <Anchors>
+          <Anchor point="TOPRIGHT">
+            <Offset><AbsDimension x="-12" y="-31" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnEnter>
+              GameTooltip_SetDefaultAnchor(GameTooltip, self);
+              GameTooltip_AddNewbieTip(self, "Filters", 1.0, 1.0, 1.0, COLLECTOR_CURRENT_FILTERS, 1);
+              GameTooltip:Show();
+          </OnEnter>
+          <OnLeave>
+              GameTooltip:Hide();
+          </OnLeave>
+        </Scripts>
+        <ButtonText name="$parentText" text="Filters">
+          <Anchors>
+            <Anchor point="CENTER" />
+          </Anchors>
+        </ButtonText>
+        <NormalFont style="GameFontNormalSmall" />
+        <HighlightFont style="GameFontHighlightSmall" />
+      </Button>
+-->
+
+<!--
+      <CheckButton name="$parentToggleModel" inherits="UICheckButtonTemplate">
+        <Size><AbsDimension x="16" y="16" /></Size>
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="$parentFilterInfo">
+            <Offset><AbsDimension x="-33" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnLoad>
+            getglobal(self:GetName().."Text"):SetText("Preview");
+          </OnLoad>
+          <OnClick>
+            if ( TheCollectorModelFrame:IsVisible() ) then
+              TheCollectorModelFrame:Hide();
+            else
+              TheCollectorModelFrame:Show();
+            end
+          </OnClick>
+          <OnEnter>
+              GameTooltip_SetDefaultAnchor(GameTooltip, self);
+              GameTooltip_AddNewbieTip(self, "Preview", 1.0, 1.0, 1.0, COLLECTOR_TOGGLE_MODEL_TOOLTIP, 1);
+              GameTooltip:Show();      
+          </OnEnter>
+          <OnLeave>
+            GameTooltip:Hide();
+          </OnLeave>
+        </Scripts>
+      </CheckButton>
+-->
+
+      <StatusBar name="$parentStatusBar" minValue="0" maxValue="100" defaultValue="0">
+        <Size><AbsDimension x="234" y="16" /></Size>
+        <Anchors>
+          <Anchor point="BOTTOMLEFT">
+            <Offset><AbsDimension x="15" y="1" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <FontString name="$parentText" inherits="GameFontHighlightSmall" text="Making Progress">
+              <Anchors><Anchor point="CENTER" /></Anchors>
+            </FontString>
+          </Layer>
+        </Layers>
+        <Frames>
+          <Button>
+            <Size><AbsDimension x="243" y="36" /></Size>
+            <Anchors>
+              <Anchor point="CENTER" />
+            </Anchors>
+            <NormalTexture file="Interface\PaperDollInfoFrame\UI-Character-Skills-BarBorder" />
+          </Button>
+        </Frames>
+        <BarTexture file="Interface\PaperDollInfoFrame\UI-Character-Skills-Bar" />
+        <BarColor r="0.25" g="0.25" b="0.75" />
+      </StatusBar>
+
+
+      <ScrollFrame name="$parentScrollFrame" inherits="FauxScrollFrameTemplate">
+        <Size><AbsDimension x="302" y="342" /></Size>
+        <Anchors>
+          <Anchor point="TOPLEFT">
+            <Offset><AbsDimension x="5" y="-70" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture file="Interface\ClassTrainerFrame\UI-ClassTrainer-ScrollBar">
+              <Size><AbsDimension x="30" y="128"/></Size>
+              <Anchors>
+                <Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+                  <Offset><AbsDimension x="-2" y="5"/></Offset>
+                </Anchor>
+              </Anchors>
+              <TexCoords left="0" right="0.46875" top="0.0" bottom="1.0"/>
+            </Texture>
+            <Texture file="Interface\ClassTrainerFrame\UI-ClassTrainer-ScrollBar">
+              <Size><AbsDimension x="30" y="128"/></Size>
+              <Anchors>
+                <Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+                  <Offset><AbsDimension x="-2" y="-114"/></Offset>
+                </Anchor>
+              </Anchors>
+              <TexCoords left="0" right="0.46875" top="0.3" bottom="1.0" />
+            </Texture>
+            <Texture file="Interface\ClassTrainerFrame\UI-ClassTrainer-ScrollBar">
+              <Size><AbsDimension x="30" y="128"/></Size>
+              <Anchors>
+                <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+                  <Offset><AbsDimension x="-2" y="-2"/></Offset>
+                </Anchor>
+              </Anchors>
+              <TexCoords left="0.53125" right="1.0" top="0.0" bottom="1.0"/>
+            </Texture>
+          </Layer>
+        </Layers>
+        <Scripts>
+          <OnVerticalScroll>
+            FauxScrollFrame_OnVerticalScroll(self, offset, COLLECTOR_LIST_ITEM_HEIGHT, TheCollectorScrollFrameUpdate);
+          </OnVerticalScroll>
+          <OnShow>
+            TheCollectorScrollFrameUpdate()
+          </OnShow>
+        </Scripts>
+      </ScrollFrame>
+
+      <Button name="$parentScrollFrameButton1" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrame" relativePoint="TOPLEFT">
+            <Offset><AbsDimension x="8" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton2" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton1" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton3" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton2" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton4" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton3" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton5" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton4" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton6" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton5" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton7" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton6" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton8" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton7" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameButton9" inherits="TheCollectorScrollFrameButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameButton8" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+
+
+      <Button name="$parentScrollFrameHeader1" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrame" relativePoint="TOPLEFT">
+            <Offset><AbsDimension x="8" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader2" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader1" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader3" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader2" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader4" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader3" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader5" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader4" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader6" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader5" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader7" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader6" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader8" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader7" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+      <Button name="$parentScrollFrameHeader9" inherits="TheCollectorScrollHeaderTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrameHeader8" relativePoint="BOTTOMLEFT" />
+        </Anchors>
+      </Button>
+
+
+      <Frame name="TheCollectorModelFrame" hidden="true">
+        <Size><AbsDimension x="350" y="220" /></Size>
+        <Anchors>
+          <Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+            <Offset><AbsDimension x="-11" y="0" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Backdrop bgfile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border"  tile="true">
+          <TileSize>
+            <AbsValue val="32" />
+          </TileSize>
+          <EdgeSize>
+            <AbsValue val="32" />
+          </EdgeSize>
+          <BackgroundInsets>
+            <AbsInset left="11" right="12" top="11" bottom="12"/>
+          </BackgroundInsets>
+        </Backdrop>
+        <Frames>
+        <PlayerModel name="TheCollectorModel" hidden="true">
+          <Size><AbsDimension x="288" y="160" /></Size>
+          <Anchors>
+            <Anchor point="TOPLEFT">
+              <Offset><AbsDimension x="10" y="-10" /></Offset>
+            </Anchor>
+          </Anchors>
+          <Backdrop edgeFile="Interface\DialogFrame\UI-DialogBox-Border" bgfile="Interface\DialogFrame\UI-DialogBox-Background" tile="true">
+            <EdgeSize>
+              <AbsValue val="15" />
+            </EdgeSize>
+            <BackgroundInsets>
+              <AbsInset left="2" right="2" top="2" bottom="2"/>
+            </BackgroundInsets>
+          </Backdrop>
+          <Scripts>
+            <OnLoad>
+              Model_OnLoad(self);
+            </OnLoad>
+            <OnEvent>
+              self:RefreshUnit();
+            </OnEvent>
+            <OnUpdate>
+              Model_OnUpdate(self, elapsed);
+            </OnUpdate>
+          </Scripts>
+          <Frames>
+            <Button name="TheCollectorModelRotateLeftButton">
+              <Size><AbsDimension x="35" y="35" /></Size>
+              <Anchors>
+                <Anchor point="TOPLEFT" relativeTo="TheCollectorModel">
+                  <Offset><AbsDimension x="0" y="0" /></Offset>
+                </Anchor>
+              </Anchors>
+              <Scripts>
+                <OnLoad>
+                  self:RegisterForClicks("LeftButtonDown", "LeftButtonUp");
+                </OnLoad>
+                <OnClick>
+                  Model_RotateLeft(TheCollectorModel);
+                </OnClick>
+              </Scripts>
+              <NormalTexture file="Interface\Buttons\UI-RotationLeft-Button-Up"/>
+              <PushedTexture file="Interface\Buttons\UI-RotationLeft-Button-Down"/>
+              <HighlightTexture file="Interface\Buttons\ButtonHilight-Round" alphaMode="ADD"/>
+            </Button>
+            <Button name="TheCollectorModelRotateRightButton">
+              <Size><AbsDimension x="35" y="35" /></Size>
+              <Anchors>
+                <Anchor point="TOPLEFT" relativeTo="TheCollectorModelRotateLeftButton" relativePoint="TOPRIGHT" />
+              </Anchors>
+              <Scripts>
+                <OnLoad>
+                  self:RegisterForClicks("LeftButtonDown", "LeftButtonUp");
+                </OnLoad>
+                <OnClick>
+                  Model_RotateRight(TheCollectorModel);
+                </OnClick>
+              </Scripts>
+              <NormalTexture file="Interface\Buttons\UI-RotationRight-Button-Up"/>
+              <PushedTexture file="Interface\Buttons\UI-RotationRight-Button-Down"/>
+              <HighlightTexture file="Interface\Buttons\ButtonHilight-Round" alphaMode="ADD"/>
+            </Button>
+          </Frames>
+        </PlayerModel>
+        </Frames>
+      </Frame>
+
+
+      <Button name="$parentTab1" inherits="TabButtonTemplate" text="COLLECTOR_COMPANIONS" id="1">
+        <Anchors>
+          <Anchor point="TOPLEFT" relativeTo="$parentScrollFrame">
+            <Offset><AbsDimension x="16" y="37" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnLoad>
+              PanelTemplates_TabResize(self, 0);
+          </OnLoad>
+          <OnClick>
+              TheCollectorUpdate(COLLECTOR_CRITTER);
+              PanelTemplates_SetTab(self:GetParent(), COLLECTOR_CRITTER);
+          </OnClick>
+        </Scripts>
+      </Button>
+
+      <Button name="$parentTab2" inherits="TabButtonTemplate" text="COLLECTOR_MOUNTS" id="2">
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT" />
+        </Anchors>
+        <Scripts>
+          <OnLoad>
+              PanelTemplates_TabResize(self, 0);
+          </OnLoad>
+          <OnClick>
+              TheCollectorUpdate(COLLECTOR_MOUNT);
+              PanelTemplates_SetTab(self:GetParent(), COLLECTOR_MOUNT);
+          </OnClick>
+        </Scripts>
+      </Button>
+
+      <Button name="$parentTab3" inherits="TabButtonTemplate" text="COLLECTOR_TITLES" id="3">
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT" />
+        </Anchors>
+        <Scripts>
+          <OnLoad>
+              PanelTemplates_TabResize(self, 0);
+          </OnLoad>
+          <OnClick>
+              TheCollectorUpdate(COLLECTOR_TITLE);
+              PanelTemplates_SetTab(self:GetParent(), COLLECTOR_TITLE);
+          </OnClick>
+        </Scripts>
+      </Button>
+
+      <Button name="TheCollectorPetToggleButton" text="COLLECTOR_TOGGLE" inherits="UIPanelButtonTemplate" parent="PetPaperDollFrameCompanionFrame">
+        <Size><AbsDimension x="60" y="21" /></Size>
+        <Anchors>
+          <Anchor point="RIGHT" relativeTo="PetPaperDollFrame" relativePoint="TOPRIGHT">
+            <Offset><AbsDimension x="-55" y="-24" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnClick>
+            if ( TheCollectorFrame:IsVisible() ) then
+              TheCollectorFrame:Hide();
+            else
+              TheCollectorUpdate(COLLECTOR_CRITTER);
+              PanelTemplates_SetTab(TheCollectorFrame, COLLECTOR_CRITTER);
+              TheCollectorFrame:Show();
+            end
+          </OnClick>
+          <OnEnter>
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+            GameTooltip:SetText(COLLECTOR_TOGGLE_INFO);
+            GameTooltip:Show();
+          </OnEnter>
+          <OnLeave>
+            GameTooltip:Hide();
+          </OnLeave>
+        </Scripts>
+      </Button>
+
+      <Button name="TheCollectorTitleToggleButtonLeft" text="COLLECTOR_TOGGLE" inherits="UIPanelButtonTemplate" parent="PaperDollFrame" hidden="true">
+        <Size><AbsDimension x="60" y="21" /></Size>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="PaperDollFrame" relativePoint="TOPLEFT">
+            <Offset><AbsDimension x="50" y="-62" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnClick>
+            TheCollectorTitleButtonOnClick();
+          </OnClick>
+          <OnEnter>
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+            GameTooltip:SetText(COLLECTOR_TOGGLE_INFO);
+            GameTooltip:Show();
+          </OnEnter>
+          <OnLeave>
+            GameTooltip:Hide();
+          </OnLeave>
+        </Scripts>
+      </Button>
+
+      <Button name="TheCollectorTitleToggleButtonRight" text="COLLECTOR_TOGGLE" inherits="UIPanelButtonTemplate" parent="PaperDollFrame">
+        <Size><AbsDimension x="60" y="21" /></Size>
+        <Anchors>
+          <Anchor point="RIGHT" relativeTo="PaperDollFrame" relativePoint="TOPRIGHT">
+            <Offset><AbsDimension x="-37" y="-62" /></Offset>
+          </Anchor>
+        </Anchors>
+        <Scripts>
+          <OnClick>
+            TheCollectorTitleButtonOnClick();
+          </OnClick>
+          <OnEnter>
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+            GameTooltip:SetText(COLLECTOR_TOGGLE_INFO);
+            GameTooltip:Show();
+          </OnEnter>
+          <OnLeave>
+            GameTooltip:Hide();
+          </OnLeave>
+        </Scripts>
+      </Button>
+
+      <Frame name="TheCollectorConfigPanel">
+        <Layers>
+          <Layer level="ARTWORK">
+            <FontString name="$parentText1" inherits="GameFontNormal" text="COLLECTOR_CONFIG_1">
+              <Anchors>
+                <Anchor point="TOPLEFT">
+                  <Offset><AbsDimension x="10" y="-11" /></Offset>
+                </Anchor>
+              </Anchors>
+            </FontString>
+          </Layer>
+        </Layers>
+
+        <Frames>
+          <CheckButton name="$parentPetsWindowCheckButton" inherits="InterfaceOptionsCheckButtonTemplate">
+            <Anchors>
+              <Anchor point="TOPLEFT" relativeTo="$parent">
+                <Offset><AbsDimension x="20" y="-30" /></Offset>
+              </Anchor>
+            </Anchors>
+            <Scripts>
+              <OnLoad>
+                getglobal(self:GetName().."Text"):SetText(COLLECTOR_CONFIG_2);
+              </OnLoad>
+              <OnClick>
+                BlizzardOptionsPanel_CheckButton_OnClick(self);
+                if ( self:GetChecked() ) then
+                  getglobal("TheCollectorPetToggleButton"):Show();
+                else
+                  getglobal("TheCollectorPetToggleButton"):Hide();
+                end
+              </OnClick>
+              <OnEnter>
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                if ( self:GetChecked() ) then
+                  GameTooltip:SetText(COLLECTOR_CONFIG_3);
+                else
+                  GameTooltip:SetText(COLLECTOR_CONFIG_4);
+                end
+                GameTooltip:Show();
+              </OnEnter>
+              <OnLeave>
+                GameTooltip:Hide();
+              </OnLeave>
+            </Scripts>
+          </CheckButton>
+
+          <CheckButton name="$parentCharWindowCheckButton" inherits="InterfaceOptionsCheckButtonTemplate">
+            <Anchors>
+              <Anchor point="TOPRIGHT" relativeTo="$parentPetsWindowCheckButton">
+                <Offset><AbsDimension x="0" y="-30" /></Offset>
+              </Anchor>
+            </Anchors>
+            <Scripts>
+              <OnLoad>
+                getglobal(self:GetName().."Text"):SetText(COLLECTOR_CHAR_WINDOW);
+              </OnLoad>
+              <OnClick>
+                BlizzardOptionsPanel_CheckButton_OnClick(self);
+
+                if ( self:GetChecked() ) then
+                  if ( getglobal(self:GetParent():GetName().."CharWindowCheckButtonLeft"):GetChecked() ) then
+                    getglobal("TheCollectorTitleToggleButtonLeft"):Show();
+                  else
+                    getglobal("TheCollectorTitleToggleButtonRight"):Show();
+                  end
+                else
+                  getglobal("TheCollectorTitleToggleButtonLeft"):Hide();
+                  getglobal("TheCollectorTitleToggleButtonRight"):Hide();
+                end
+              </OnClick>
+              <OnEnter>
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                if ( self:GetChecked() ) then
+                  GameTooltip:SetText(COLLECTOR_CONFIG_5);
+                else
+                  GameTooltip:SetText(COLLECTOR_CONFIG_6);
+                end
+                GameTooltip:Show();
+              </OnEnter>
+              <OnLeave>
+                GameTooltip:Hide();
+              </OnLeave>
+            </Scripts>
+          </CheckButton>
+
+          <CheckButton name="$parentCharWindowCheckButtonLeft" inherits="UIRadioButtonTemplate">
+            <Anchors><Anchor point="TOPLEFT" relativeTo="$parentCharWindowCheckButton">
+              <Offset><AbsDimension x="25" y="-30" /></Offset>
+            </Anchor></Anchors>
+            <Scripts>
+              <OnLoad>
+                getglobal(self:GetName().."Text"):SetText("Left");
+                getglobal(self:GetName()):SetChecked(false);
+                BlizzardOptionsPanel_SetupDependentControl(getglobal(self:GetParent():GetName().."CharWindowCheckButton"), self);
+              </OnLoad>
+              <OnClick>
+                getglobal(self:GetParent():GetName().."CharWindowCheckButtonRight"):SetChecked(false);
+                getglobal("TheCollectorTitleToggleButtonLeft"):Show();
+                getglobal("TheCollectorTitleToggleButtonRight"):Hide();
+              </OnClick>
+              <OnEnter>
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                GameTooltip:SetText(COLLECTOR_CONFIG_7);
+                GameTooltip:Show();
+              </OnEnter>
+              <OnLeave>
+                GameTooltip:Hide();
+              </OnLeave>
+            </Scripts>
+          </CheckButton>
+
+          <CheckButton name="$parentCharWindowCheckButtonRight" inherits="UIRadioButtonTemplate">
+            <Anchors><Anchor point="TOPLEFT" relativeTo="$parentCharWindowCheckButtonLeft">
+              <Offset><AbsDimension x="70" y="0" /></Offset>
+            </Anchor></Anchors>
+            <Scripts>
+              <OnLoad>
+                getglobal(self:GetName().."Text"):SetText("Right");
+                getglobal(self:GetName()):SetChecked(true);
+                BlizzardOptionsPanel_SetupDependentControl(getglobal(self:GetParent():GetName().."CharWindowCheckButton"), self);
+              </OnLoad>
+              <OnClick>
+                getglobal(self:GetParent():GetName().."CharWindowCheckButtonLeft"):SetChecked(false);
+                getglobal("TheCollectorTitleToggleButtonLeft"):Hide();
+                getglobal("TheCollectorTitleToggleButtonRight"):Show();
+              </OnClick>
+              <OnEnter>
+                GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                GameTooltip:SetText(COLLECTOR_CONFIG_8);
+                GameTooltip:Show();
+              </OnEnter>
+              <OnLeave>
+                GameTooltip:Hide();
+              </OnLeave>
+
+            </Scripts>
+          </CheckButton>
+		  
+        </Frames>
+	    <Scripts>
+	      <OnLoad>
+                TheCollectorConfigOnLoad(self);
+              </OnLoad>
+	    </Scripts>
+	  </Frame>
+	    
+    </Frames>
+
+    <Scripts>
+      <OnLoad>
+        self:RegisterEvent("PLAYER_ENTERING_WORLD");
+        PanelTemplates_SetNumTabs(self, 3);
+      </OnLoad>
+      <OnEvent>
+        TheCollectorOnEvent(self, event);
+      </OnEvent>
+    </Scripts>
+
+  </Frame>
+</Ui> 

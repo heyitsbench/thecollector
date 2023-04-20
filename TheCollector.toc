@@ -1,0 +1,30 @@
+## Title: TheCollector
+## Notes: Displays a list of collectable items (mounts, companions, etc) this character is missing.
+
+## Author: Skeeve
+## X-Author-Server: Shadowmoon US
+## X-Author-Faction: Alliance
+## eMail: skeevesm AT gmail DOT com
+## X-email: skeevesm AT gmail DOT com
+## X-License: MIT modified with notification clause
+
+## Interface: 30300
+## Version: 0.7.3
+
+## X-credits: Ackis (AckisRecipeList), interface forums, wowwiki
+
+## Dependencies:
+## DefaultState: Enabled
+## LoadOnDemond: 0
+## SavedVariablesPerCharacter: TheCollectorSavedVars
+
+Locales\enUS.lua
+
+ItemsDB\TC-CompanionData.lua
+ItemsDB\TC-MountData.lua
+ItemsDB\TC-TitleData.lua
+
+TheCollector.xml
+TheCollector.lua
+
+TheCollectorConfig.lua
