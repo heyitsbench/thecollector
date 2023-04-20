@@ -9,7 +9,7 @@
 ## X-License: MIT modified with notification clause
 
 ## Interface: 30300
-## Version: 0.7.3
+## Version: 0.7.4
 
 ## X-credits: Ackis (AckisRecipeList), interface forums, WoWWiki
 
