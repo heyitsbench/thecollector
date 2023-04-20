@@ -11,7 +11,7 @@
 ## Interface: 30300
 ## Version: 0.7.3
 
-## X-credits: Ackis (AckisRecipeList), interface forums, wowwiki
+## X-credits: Ackis (AckisRecipeList), interface forums, WoWWiki
 
 ## Dependencies:
 ## DefaultState: Enabled
