@@ -907,6 +907,9 @@ TheCollectorSpecialMountTable = {
   -- Brutal Nether Drake
   [58615]={1, 7, "Reward for Season 4 Arenas"},
 
+  -- Celestial Steed
+  [75614]={1, 7, "Blizzard Store"},
+
   -- Deadly Gladiator's Frostwyrm
   [64927]={1, 7, "Reward for Season 5 Arenas"},
 

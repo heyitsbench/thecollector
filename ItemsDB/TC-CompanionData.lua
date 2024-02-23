@@ -482,6 +482,9 @@ TheCollectorSpecialCompanionTable = {
   -- Clockwork Rocket Bot
   [54187]={1, 7, "Winter Veil 2007 gift"},
 
+  -- Corrupted Kitten
+  [15648]={1, 7, "Unobtainable"},
+
   -- Dragon Kite
   [45127]={1, 7, "World of Warcraft TCG\nMarch of the Legion pack\nKiting card"},
 
@@ -508,6 +511,15 @@ TheCollectorSpecialCompanionTable = {
   -- Jade Tiger
   [66520]={1, 7, "Logged in during the Chinese Jade Tiger giveaway"},
 
+  -- Lil XT
+  [75906]={1, 7, "Blizzard Store"},
+
+  -- Loggerhead Snapjaw
+  [23429]={1, 7, "Unobtainable"},
+
+  -- Lucky
+  [40319]={1, 7, "2007 Blizzard Worldwide Invitational gift"},
+
   -- Lucky
   [40405]={1, 7, "2007 Blizzard Worldwide Invitational gift"},
 
@@ -516,6 +528,9 @@ TheCollectorSpecialCompanionTable = {
 
   -- Mini Diablo
   [17708]={3, 7, "World of Warcraft Collector's edition gift"},
+
+  -- Mini Thor
+  [78381]={1, 7, "Starcraft II: Wings of Liberty Collector's Edition gift"},
 
   -- Mini Tyrael
   [53082]={3, 7, "2008 Worldwide Invitational gift"},
@@ -531,6 +546,9 @@ TheCollectorSpecialCompanionTable = {
 
   -- Netherwhelp
   [32298]={3, 7, "Burning Crusade Collector's edition gift"},
+
+  -- Onyx Panther
+  [67527]={1, 7, "Unknown, Korean only"},
 
   -- Onyxia Whelpling
   [69002]={3, 7, "Obtained from logging in during WoW's 5th anniversary"},
@@ -565,6 +583,9 @@ TheCollectorSpecialCompanionTable = {
   -- Vampiric Batling
   [51851]={1, 3, { {"Prince Tenris Mirkblood", "Karazhan\n(Only appears during WotLK event)", "100"} } },
 
+  -- XS-001 Constructor Bot
+  [64351]={1, 7, "PTR Appreciation gift"},
+
   -- Zergling
   [17709]={3, 7, "World of Warcraft Collector's edition gift"},
 
@@ -579,7 +600,4 @@ TheCollectorSpecialCompanionTable = {
   -- 3.3.3 unknown locations
   -- Celestial Dragon
   [75613]={1, 7, "Unknown"},
-
-  -- Lil XT
-  [75906]={1, 7, "Unknown"},
 };
