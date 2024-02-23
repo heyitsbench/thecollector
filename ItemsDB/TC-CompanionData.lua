@@ -483,7 +483,7 @@ TheCollectorSpecialCompanionTable = {
   [54187]={1, 7, "Winter Veil 2007 gift"},
 
   -- Corrupted Kitten
-  [15648]={1, 7, "Unobtainable"},
+  [15648]={4, 7, "Unobtainable"},
 
   -- Dragon Kite
   [45127]={1, 7, "World of Warcraft TCG\nMarch of the Legion pack\nKiting card"},
@@ -515,13 +515,13 @@ TheCollectorSpecialCompanionTable = {
   [75906]={1, 7, "Blizzard Store"},
 
   -- Loggerhead Snapjaw
-  [23429]={1, 7, "Unobtainable"},
+  [23429]={2, 7, "Unobtainable"},
 
   -- Lucky
-  [40319]={1, 7, "2007 Blizzard Worldwide Invitational gift"},
+  [40319]={3, 7, "2007 Blizzard Worldwide Invitational gift"},
 
   -- Lucky
-  [40405]={1, 7, "2007 Blizzard Worldwide Invitational gift"},
+  [40405]={3, 7, "2007 Blizzard Worldwide Invitational gift"},
 
   -- Lurky
   [24988]={1, 7, "European Burning Crusade Collector's edition gift"},
@@ -530,7 +530,7 @@ TheCollectorSpecialCompanionTable = {
   [17708]={3, 7, "World of Warcraft Collector's edition gift"},
 
   -- Mini Thor
-  [78381]={1, 7, "Starcraft II: Wings of Liberty Collector's Edition gift"},
+  [78381]={3, 7, "Starcraft II: Wings of Liberty Collector's Edition gift"},
 
   -- Mini Tyrael
   [53082]={3, 7, "2008 Worldwide Invitational gift"},
@@ -584,7 +584,7 @@ TheCollectorSpecialCompanionTable = {
   [51851]={1, 3, { {"Prince Tenris Mirkblood", "Karazhan\n(Only appears during WotLK event)", "100"} } },
 
   -- XS-001 Constructor Bot
-  [64351]={1, 7, "PTR Appreciation gift"},
+  [64351]={4, 7, "PTR Appreciation gift"},
 
   -- Zergling
   [17709]={3, 7, "World of Warcraft Collector's edition gift"},
