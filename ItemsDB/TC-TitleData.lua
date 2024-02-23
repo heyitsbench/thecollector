@@ -10,133 +10,133 @@ Title IDs for all the titles a player could potentially have.
 -- These are titles that either faction can get.
 TheCollectorCommonTitleTable = {
   -- Gladiator
-  [29]={4, 7, "Top 0.5% of arena teams at end of previous season"},
+  [29]={4, 7, COLLECTOR_TITLE_REQ_GLADIATOR},
 
   -- Duelist
-  [30]={4, 7, "Top 3.0% of arena teams at end of previous season"},
+  [30]={4, 7, COLLECTOR_TITLE_REQ_DUELIST},
 
   -- Rival
-  [31]={4, 7, "Top 10% of arena teams at end of previous season"},
+  [31]={4, 7, COLLECTOR_TITLE_REQ_RIVAL},
 
   -- Challenger
-  [32]={4, 7, "Top 35% of arena teams at end of previous season"},
+  [32]={4, 7, COLLECTOR_TITLE_REQ_CHALLENGER},
 
   -- of the Shattered Sun
-  [38]={4, 7, "Exalted with Shattered Sun Offensive and 1000 gold"},
+  [38]={4, 7, COLLECTOR_TITLE_REQ_SHATTERED_SUN},
 
   -- Battlemaster
-  [41]={4, 5, "Battlemaster"},
+  [41]={4, 5, COLLECTOR_TITLE_REQ_BATTLEMASTER},
 
   -- the Seeker
-  [42]={4, 7, "Complete 3000 quests"},
+  [42]={4, 7, COLLECTOR_TITLE_REQ_SEEKER},
 
   -- Elder
-  [43]={4, 5, "To Honor One's Elders"},
+  [43]={4, 5, COLLECTOR_TITLE_REQ_ELDER},
 
   -- the Exalted
-  [46]={4, 7, "Raise 40 reputations to exalted status"},
+  [46]={4, 7, COLLECTOR_TITLE_REQ_EXALTED},
 
   -- the Explorer
-  [47]={4, 7, "Discover all zones of Azeroth, Outland, and Northrend"},
+  [47]={4, 7, COLLECTOR_TITLE_REQ_EXPLORER},
 
   -- Arena Master
-  [50]={4, 5, "The Arena Master"},
+  [50]={4, 5, COLLECTOR_TITLE_REQ_ARENA_MASTER},
 
   -- Salty
-  [51]={4, 5, "Accomplished Angler"},
+  [51]={4, 5, COLLECTOR_TITLE_REQ_SALTY},
 
   -- Chef
-  [52]={4, 5, "Hail to the Chef"},
+  [52]={4, 5, COLLECTOR_TITLE_REQ_CHEF},
 
   -- Twilight Vanquisher
-  [89]={4, 5, "Heroic: The Twilight Zone"},
+  [89]={4, 5, COLLECTOR_TITLE_REQ_TWILIGHT_VANQUISHER},
 
   -- the Hallowed
-  [92]={4, 5, "Hallowed Be Thy Name"},
+  [92]={4, 5, COLLECTOR_TITLE_REQ_HALLOWED},
 
   -- Loremaster
-  [93]={4, 5, "The Loremaster"},
+  [93]={4, 5, COLLECTOR_TITLE_REQ_LOREMASTER},
 
   -- the Flawless Victor
-  --[96]={4, 7, "Win 10 ranked arena matches in a row with a rating above 2,000 at level 80"},
+  --[96]={4, 7, COLLECTOR_TITLE_REQ_FLAWLESS_VICTOR},
 
   -- Champion of the Frozen Wastes
-  [97]={4, 5, "Champion of the Frozen Wastes"},
+  [97]={4, 5, COLLECTOR_TITLE_REQ_FROZEN_WASTES},
 
   -- Ambassador
-  [98]={4, 7, "Earn exalted reputation with 5 home cities"},
+  [98]={4, 7, COLLECTOR_TITLE_REQ_AMBASSADOR},
 
   -- the Argent Champion
-  [99]={4, 7, "Earn exalted status with the Argent Dawn and the Argent Crusade"},
+  [99]={4, 7, COLLECTOR_TITLE_REQ_ARGENT_CHAMPION},
 
   -- Guardian of Cenarius
-  [100]={4, 7, "Earn exalted status with the Cenarion Circle and Cenarion Expedition"},
+  [100]={4, 7, COLLECTOR_TITLE_REQ_CENARIUS},
 
   -- Brewmaster
-  [101]={4, 5, "Brewmaster"},
+  [101]={4, 5, COLLECTOR_TITLE_REQ_BREWMASTER},
 
   -- Merrymaker
-  [102]={4, 5, "Merrymaker"},
+  [102]={4, 5, COLLECTOR_TITLE_REQ_MERRYMAKER},
 
   -- the Love Fool
-  [103]={4, 5, "Fool For Love"},
+  [103]={4, 5, COLLECTOR_TITLE_REQ_LOVE_FOOL},
 
   -- of the Nightfall
-  [107]={4, 5, "The Twilight Zone"},
+  [107]={4, 5, COLLECTOR_TITLE_REQ_NIGHTFALL},
 
   -- the Immortal
-  [108]={4, 5, "The Immortal"},
+  [108]={4, 5, COLLECTOR_TITLE_REQ_IMMORTAL},
 
   -- the Undying
-  [109]={4, 5, "The Undying"},
+  [109]={4, 5, COLLECTOR_TITLE_REQ_UNDYING},
 
   -- Jenkins
-  [110]={4, 5, "Leeeeeeeeeeeeeroy!"},
+  [110]={4, 5, COLLECTOR_TITLE_REQ_JENKINS},
 
   -- Bloodsail Admiral
-  [111]={4, 2, "Avast Ye, Admiral!"},
+  [111]={4, 2, COLLECTOR_TITLE_REQ_BLOODSAIL},
 
   -- the Insane
-  [112]={4, 7, "Earn exalted status with:\nBooty Bay\nEverlook\nGadgetzan\nRatchet\nDarkmoon Faire\nRavenholdt\nShen'dralar\n\nand Honored with Bloodsail Buccaneers"},
+  [112]={4, 7, COLLECTOR_TITLE_REQ_INSANE},
 
   -- the Noble
-  [122]={4, 5, "Noble Gardener"},
+  [122]={4, 5, COLLECTOR_TITLE_REQ_NOBLE},
 
   -- Conqueror of Ulduar
-  [126]={4, 5, "Conqueror of Ulduar"},
+  [126]={4, 5, COLLECTOR_TITLE_REQ_ULDUAR_CONQUEROR},
 
   -- Champion of Ulduar
-  [127]={4, 5, "Champion of Ulduar"},
+  [127]={4, 5, COLLECTOR_TITLE_REQ_ULDUAR_CHAMPION},
 
   -- Starcaller
-  [129]={4, 5, "Observed"},
+  [129]={4, 5, COLLECTOR_TITLE_REQ_STARCALLER},
 
   -- the Astral Walker
-  [130]={4, 5, "Heroic: Observed"},
+  [130]={4, 5, COLLECTOR_TITLE_REQ_ASTRAL_WALKER},
 
   -- Herald of the Titans
-  [131]={4, 5, "Herald of the Titans"},
+  [131]={4, 5, COLLECTOR_TITLE_REQ_HERALD},
 
   -- the Pilgrim
-  [133]={4, 5, "Pilgrim"},
+  [133]={4, 5, COLLECTOR_TITLE_REQ_PILGRIM},
 
   -- Argent Defender
-  [136]={4, 5, "A Tribute to Dedicated Insanity"},
+  [136]={4, 5, COLLECTOR_TITLE_REQ_ARGENT_DEFENDER},
 
   -- the Patient
-  [137]={4, 5, "Looking for Many"},
+  [137]={4, 5, COLLECTOR_TITLE_REQ_PATIENT},
 
   -- the Light of the Dawn
-  [138]={4, 5, "The Light of Dawn"},
+  [138]={4, 5, COLLECTOR_TITLE_REQ_LIGHT_OF_DAWN},
 
   -- the Bane of the Fallen King
-  [139]={4, 5, "Fall of the Lich King"},
+  [139]={4, 5, COLLECTOR_TITLE_REQ_BANE},
 
   -- the Kingslayer
-  [140]={4, 5, "The Frozen Throne (10 or 25 man)"},
+  [140]={4, 5, COLLECTOR_TITLE_REQ_KINGSLAYER},
 
   -- of the Ashen Verdict
-  [141]={4, 5, "The Ashen Verdict"},
+  [141]={4, 5, COLLECTOR_TITLE_REQ_ASHEN_VERDICT},
 
 };
 
@@ -144,34 +144,34 @@ TheCollectorCommonTitleTable = {
 -- These are titles that only Alliance can get.
 TheCollectorAllianceTitleTable = {
   -- Justicar
-  [35]={4, 7, "Exalted with Silverwing Sentinels, Stormpike Guard, and The League of Arathor"},
+  [35]={4, 7, COLLECTOR_TITLE_REQ_PVP_EXALTED_ALLY},
 
   -- Flame Warden
-  [44]={4, 5, "The Flame Warden"},
+  [44]={4, 5, COLLECTOR_TITLE_REQ_MIDSUMMER_ALLY},
 
   -- the Diplomat
-  [48]={4, 7, "Raise your reputation level to exalted with Timbermaw Hold, Sporeggar, and Kurenai"},
+  [48]={4, 7, COLLECTOR_TITLE_REQ_DIPLOMAT_ALLY},
 
   -- of Gnomeregan
-  [81]={4, 7, "Earn exalted status with and the right to represent the Gnomeregan Exiles in the Argent Tournament"},
+  [81]={4, 7, COLLECTOR_TITLE_REQ_GNOMEREGAN},
 
   -- of the Alliance
-  [94]={4, 7, "Get 100,000 honorable kills"},
+  [94]={4, 7, COLLECTOR_TITLE_REQ_PVP},
 
   -- of the Exodar
-  [113]={4, 7, "Earn exalted status with and the right to represent the Exodar in the Argent Tournament"},
+  [113]={4, 7, COLLECTOR_TITLE_REQ_EXODAR},
 
   -- of Darnassus
-  [114]={4, 7, "Earn exalted status with and the right to represent Darnassus in the Argent Tournament"},
+  [114]={4, 7, COLLECTOR_TITLE_REQ_DARNASSUS},
 
   -- of Ironforge
-  [115]={4, 7, "Earn exalted status with and the right to represent Ironforge in the Argent Tournament"},
+  [115]={4, 7, COLLECTOR_TITLE_REQ_IRONFORGE},
 
   -- of Stormwind
-  [116]={4, 7, "Earn exalted status with and the right to represent Stormwind in the Argent Tournament"},
+  [116]={4, 7, COLLECTOR_TITLE_REQ_STORMWIND},
 
   -- Crusader
-  [123]={4, 7, "Earn exalted status with the Argent Crusade and the right to represent the Alliance in the Argent Tournament"},
+  [123]={4, 7, COLLECTOR_TITLE_REQ_CRUSADER_ALLY},
 };
 
 
@@ -179,34 +179,34 @@ TheCollectorAllianceTitleTable = {
 -- These are titles that only Horde can get.
 TheCollectorHordeTitleTable = {
   -- Conqueror
-  [34]={4, 7, "Exalted with Warsong Outriders, Frostwolf Clan, and The Defilers"},
+  [34]={4, 7, COLLECTOR_TITLE_REQ_PVP_EXALTED_HORDE},
 
   -- Flame Keeper
-  [45]={4, 5, "The Flame Keeper"},
+  [45]={4, 5, COLLECTOR_TITLE_REQ_MIDSUMMER_HORDE},
 
   -- the Diplomat
-  [48]={4, 7, "Raise your reputation level to exalted with Timbermaw Hold, Sporeggar, and Mag'har"},
+  [48]={4, 7, COLLECTOR_TITLE_REQ_DIPLOMAT_HORDE},
 
   -- of the Horde
-  [95]={4, 7, "Get 100,000 honorable kills"},
+  [95]={4, 7, COLLECTOR_TITLE_REQ_PVP},
 
   -- of Orgrimmar
-  [117]={4, 7, "Earn exalted status with and the right to represent Orgrimmar in the Argent Tournament"},
+  [117]={4, 7, COLLECTOR_TITLE_REQ_ORGRIMMAR},
 
   -- of Sen'jin
-  [118]={4, 7, "Earn exalted status with and the right to represent Sen'jin in the Argent Tournament"},
+  [118]={4, 7, COLLECTOR_TITLE_REQ_SENJIN},
 
   -- of Silvermoon
-  [119]={4, 7, "Earn exalted status with and the right to represent Silvermoon in the Argent Tournament"},
+  [119]={4, 7, COLLECTOR_TITLE_REQ_SILVERMOON},
 
   -- of Thunder Bluff
-  [120]={4, 7, "Earn exalted status with and the right to represent Thunder Bluff in the Argent Tournament"},
+  [120]={4, 7, COLLECTOR_TITLE_REQ_THUNDER_BLUFF},
 
   -- of the Undercity
-  [121]={4, 7, "Earn exalted status with and the right to represent the Undercity in the Argent Tournament"},
+  [121]={4, 7, COLLECTOR_TITLE_REQ_UNDERCITY},
 
   -- Crusader
-  [123]={4, 7, "Earn exalted status with the Argent Crusade and the right to represent the Horde in the Argent Tournament"},
+  [123]={4, 7, COLLECTOR_TITLE_REQ_CRUSADER_HORDE},
 
 };
 
@@ -214,14 +214,14 @@ TheCollectorHordeTitleTable = {
 -- These are titles that male players can get.
 TheCollectorMaleTitleTable = {
   -- Patron
-  [105]={4, 5, "For The Children"},
+  [105]={4, 5, COLLECTOR_TITLE_REQ_CHILDREN},
 };
 
 
 -- These are titles that female players can get.
 TheCollectorFemaleTitleTable = {
   -- Matron
-  [104]={4, 5, "For The Children"},
+  [104]={4, 5, COLLECTOR_TITLE_REQ_CHILDREN},
 
 };
 
@@ -230,240 +230,240 @@ TheCollectorFemaleTitleTable = {
 -- We put them here so it doesn't spew warnings about missing titles for these.
 TheCollectorSpecialTitleTable = {
   -- Private
-  [1]={4, 7, "Old PVP title"},
+  [1]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Corporal
-  [2]={4, 7, "Old PVP title"},
+  [2]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Sergeant
-  [3]={4, 7, "Old PVP title"},
+  [3]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Master Sergeant
-  [4]={4, 7, "Old PVP title"},
+  [4]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Sergeant Major
-  [5]={4, 7, "Old PVP title"},
+  [5]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Knight
-  [6]={4, 7, "Old PVP title"},
+  [6]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Knight-Lieutenant
-  [7]={4, 7, "Old PVP title"},
+  [7]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Knight-Captain
-  [8]={4, 7, "Old PVP title"},
+  [8]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Knight-Champion
-  [9]={4, 7, "Old PVP title"},
+  [9]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Lieutenant Commander
-  [10]={4, 7, "Old PVP title"},
+  [10]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Commander
-  [11]={4, 7, "Old PVP title"},
+  [11]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Marshal
-  [12]={4, 7, "Old PVP title"},
+  [12]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Field Marshal
-  [13]={4, 7, "Old PVP title"},
+  [13]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Grand Marshal
-  [14]={4, 7, "Old PVP title"},
+  [14]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Scout
-  [15]={4, 7, "Old PVP title"},
+  [15]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Grunt
-  [16]={4, 7, "Old PVP title"},
+  [16]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Sergeant
-  [17]={4, 7, "Old PVP title"},
+  [17]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Senior Sergeant
-  [18]={4, 7, "Old PVP title"},
+  [18]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- First Sergeant
-  [19]={4, 7, "Old PVP title"},
+  [19]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Stone Guard
-  [20]={4, 7, "Old PVP title"},
+  [20]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Blood Guard
-  [21]={4, 7, "Old PVP title"},
+  [21]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Legionnaire
-  [22]={4, 7, "Old PVP title"},
+  [22]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Centurion
-  [23]={4, 7, "Old PVP title"},
+  [23]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Champion
-  [24]={4, 7, "Old PVP title"},
+  [24]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Lieutenant General
-  [25]={4, 7, "Old PVP title"},
+  [25]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- General
-  [26]={4, 7, "Old PVP title"},
+  [26]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Warlord
-  [27]={4, 7, "Old PVP title"},
+  [27]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- High Warlord
-  [28]={4, 7, "Old PVP title"},
+  [28]={4, 7, COLLECTOR_TITLE_REQ_PVP_LEGACY},
 
   -- Scarab Lord
-  [33]={4, 7, "Opening Ahn'Qiraj with the Scepter of the Shifting Sands"},
+  [33]={4, 7, COLLECTOR_TITLE_REQ_SCARAB_LORD},
 
   -- Champion of the Naaru
-  [36]={4, 7, "Complete the Trials of the Naaru and The Cudgel of Kar'desh"},
+  [36]={4, 7, COLLECTOR_TITLE_REQ_NAARU_CHAMPION},
 
   -- Merciless Gladiator
-  [37]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 2"},
+  [37]={4, 7, COLLECTOR_TITLE_REQ_MERCILESS},
 
   -- Hand of A'dal
-  [39]={4, 7, "Complete the Medallion of Karabor and The Vials of Eternity"},
+  [39]={4, 7, COLLECTOR_TITLE_REQ_HAND_OF_ADAL},
 
   -- Vengeful Gladiator
-  [40]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 3"},
+  [40]={4, 7, COLLECTOR_TITLE_REQ_VENGEFUL},
 
   -- Brutal Gladiator
-  [49]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 4"},
+  [49]={4, 7, COLLECTOR_TITLE_REQ_BRUTAL},
 
   -- the Supreme
-  [53]={4, 7, "Unknown"},
+  [53]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of the Ten Storms
-  [54]={4, 7, "Unknown"},
+  [54]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of the Emerald Dream
-  [55]={4, 7, "Unknown"},
+  [55]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Crusader
-  [56]={4, 7, "Unknown"},
+  [56]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Prophet
-  [57]={4, 7, "Unknown"},
+  [57]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- the Malefic
-  [58]={4, 7, "Unknown"},
+  [58]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Stalker
-  [59]={4, 7, "Unknown"},
+  [59]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of the Ebon Blade
-  [60]={4, 7, "Unknown"},
+  [60]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Archmage
-  [61]={4, 7, "Unknown"},
+  [61]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Warbringer
-  [62]={4, 7, "Unknown"},
+  [62]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Assassin
-  [63]={4, 7, "Unknown"},
+  [63]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Alchemist
-  [64]={4, 7, "Unknown"},
+  [64]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Blacksmith
-  [65]={4, 7, "Unknown"},
+  [65]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Iron Chef
-  [66]={4, 7, "Unknown"},
+  [66]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Enchanter
-  [67]={4, 7, "Unknown"},
+  [67]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Engineer
-  [68]={4, 7, "Unknown"},
+  [68]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Doctor
-  [69]={4, 7, "Unknown"},
+  [69]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Angler
-  [70]={4, 7, "Unknown"},
+  [70]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Herbalist
-  [71]={4, 7, "Unknown"},
+  [71]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Scribe
-  [72]={4, 7, "Unknown"},
+  [72]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Jewelcrafter
-  [73]={4, 7, "Unknown"},
+  [73]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Leatherworker
-  [74]={4, 7, "Unknown"},
+  [74]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Miner
-  [75]={4, 7, "Unknown"},
+  [75]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Skinner
-  [76]={4, 7, "Unknown"},
+  [76]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Grand Master Tailor
-  [77]={4, 7, "Unknown"},
+  [77]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of Quel'Thalas
-  [78]={4, 7, "Unknown"},
+  [78]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of Argus
-  [79]={4, 7, "Unknown"},
+  [79]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of Khaz Modan
-  [80]={4, 7, "Unknown"},
+  [80]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- the Lion Hearted
-  [82]={4, 7, "Unknown"},
+  [82]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Champion of Elune
-  [83]={4, 7, "Unknown"},
+  [83]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Hero of Orgrimmar
-  [84]={4, 7, "Unknown"},
+  [84]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Plainsrunner
-  [85]={4, 7, "Unknown"},
+  [85]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- of the Darkspear
-  [86]={4, 7, "Unknown"},
+  [86]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- the Forsaken
-  [87]={4, 7, "Unknown"},
+  [87]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- the Magic Seeker
-  [88]={4, 7, "Participated in the realm first Malygos kill (Heroic)"},
+  [88]={4, 7, COLLECTOR_TITLE_REQ_MAGIC_SEEKER},
 
   -- Conqueror of Naxxramas
-  [90]={4, 7, "Participated in the realm first Kel'Thuzad kill (Heroic)"},
+  [90]={4, 7, COLLECTOR_TITLE_REQ_NAXX_CONQUEROR},
 
   -- Hero of Northrend
-  [91]={4, 7, "Unknown"},
+  [91]={4, 7, COLLECTOR_TITLE_REQ_UNOBTAINABLE},
 
   -- Obsidian Slayer
-  [106]={4, 7, "Participated in the realm first Sartharion kill (Heroic)"},
+  [106]={4, 7, COLLECTOR_TITLE_REQ_OBSIDIAN_SLAYER},
 
   -- Death's Demise
-  [124]={4, 7, "Participated in the realm first defeat of Yogg-Saron without the assistance of any keepers (Heroic)"},
+  [124]={4, 7, COLLECTOR_TITLE_REQ_DEATHS_DEMISE},
 
   -- the Celestial Defender
-  [125]={4, 7, "Participated in the realm first defeat of Algalon the Observer (Heroic)"},
+  [125]={4, 7, COLLECTOR_TITLE_REQ_CELESTIAL_DEFENDER},
 
   -- Vanquisher
-  [128]={4, 7, "Top 1000 overall of arena teams at the end of the 2009 Arena Tournament"},
+  [128]={4, 7, COLLECTOR_TITLE_REQ_VANQUISHER},
 
   -- Furious Gladiator
-  [132]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 6"},
+  [132]={4, 7, COLLECTOR_TITLE_REQ_FURIOUS},
 
   -- Relentless Gladiator
-  [134]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 7"},
+  [134]={4, 7, COLLECTOR_TITLE_REQ_RELENTLESS},
 
   -- Grand Crusader
-  [135]={4, 7, "Participated in the realm first conquest of the Trial of the Grand Crusader with 50 attempts remaining in 25-player mode."},
+  [135]={4, 7, COLLECTOR_TITLE_REQ_GRAND},
 
   -- Wrathful Gladiator
-  [142]={4, 7, "Highest rated arena team in the Battlegroup at end of Season 8"},
+  [142]={4, 7, COLLECTOR_TITLE_REQ_WRATHFUL},
 
 };
