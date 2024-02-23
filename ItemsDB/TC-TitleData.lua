@@ -97,7 +97,7 @@ TheCollectorCommonTitleTable = {
   [111]={4, 2, "Avast Ye, Admiral!"},
 
   -- the Insane
-  [112]={4, 7, "Earn exalted status with:\nBooty Bay\nEverlook\nGadgetzan,\nRatchet\nDarkmoon Faire\nRavenholdt\nShen'dralar\n\nand Honored with Bloodsail Buccaneers"},
+  [112]={4, 7, "Earn exalted status with:\nBooty Bay\nEverlook\nGadgetzan\nRatchet\nDarkmoon Faire\nRavenholdt\nShen'dralar\n\nand Honored with Bloodsail Buccaneers"},
 
   -- the Noble
   [122]={4, 5, "Noble Gardener"},

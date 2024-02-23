@@ -12,8 +12,6 @@ COLLECTOR_VERSION = "";  -- This gets put into the frame header so the player ca
 COLLECTOR_NUM_ITEMS_TO_DISPLAY = 9;  -- This is the number of lines to display at once in the scroll frame.
 COLLECTOR_LIST_ITEM_HEIGHT = 0;
 
-COLLECTOR_TOGGLE_MODEL_TOOLTIP = "Clicking this will toggle the window that shows the 3D model for the selected item.";
-
 COLLECTOR_CURRENT_FILTERS = "";
 
 COLLECTOR_CRITTER = 1;
@@ -136,11 +134,11 @@ function TheCollectorInitialize(self)
         for spellIndex = tabSpellOffset + 1, tabSpellOffset + tabNumSpells do
             local spellName, _ = GetSpellName(spellIndex, BOOKTYPE_SPELL)
 
-            if ( spellName == GetSpellInfo(4036) ) then
+            if ( spellName == GetSpellInfo(4036) ) then -- Apprentice Engineering
                 PlayerIsEngineer = true;
             end
 
-            if ( spellName == GetSpellInfo(3908) ) then
+            if ( spellName == GetSpellInfo(3908) ) then -- Apprentice Tailoring
                 PlayerIsTailor = true;
             end
         end
@@ -153,7 +151,7 @@ function TheCollectorInitialize(self)
 
     TheCollectorUpdate(COLLECTOR_CRITTER);
 
-    COLLECTOR_INITIALIZATION = "TheCollector v"..COLLECTOR_VERSION.." initialized. Enter |cffffff00/thecollector show|r or |cffffff00/tc show|r to display the window.";
+    COLLECTOR_INITIALIZATION = COLLECTOR_INITIALIZATION_FIRST..COLLECTOR_VERSION..COLLECTOR_INITIALIZATION_SECOND;
 
     DEFAULT_CHAT_FRAME:AddMessage(COLLECTOR_INITIALIZATION);
 end
@@ -187,7 +185,7 @@ function TheCollectorUpdate(id)
     TheCollectorFrameStatusBar:SetValue(knownItemPercentage);
     local s = "";
     if ( totalSpecialItems > 0 ) then
-        s = " (+ "..totalSpecialItems.." extra items)";
+        s = COLLECTOR_TOTAL_SPECIAL_ITEMS_FIRST..totalSpecialItems..COLLECTOR_TOTAL_SPECIAL_ITEMS_SECOND;
     end
     TheCollectorFrameStatusBarText:SetText(totalKnownItems..s.." / "..totalItems.." - "..knownItemPercentage.."\%");
 

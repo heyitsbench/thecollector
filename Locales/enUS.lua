@@ -1,5 +1,8 @@
 --if ( GetLocale() == "enUS" ) then
 
+	COLLECTOR_INITIALIZATION_FIRST = "TheCollector v";
+	COLLECTOR_INITIALIZATION_SECOND = " initialized. Enter |cffffff00/thecollector show|r or |cffffff00/tc show|r to display the window.";
+
 	COLLECTOR_ALTERAC_MOUNTAINS = "Alterac Mountains";
 	COLLECTOR_AZSHARA = "Azshara";
 	COLLECTOR_BADLANDS = "Badlands";
@@ -123,8 +126,13 @@
 	COLLECTOR_MISSING_TOOLTIP = "Missing items are items that you should be able to obtain, but haven't yet.";
 	COLLECTOR_EXTRAS_TOOLTIP = "Extra items are items that are difficult/impossible to obtain, but somehow you have. They don't count against you as missing items, but if you have collected any they are listed here.";
 	COLLECTOR_INACTIVE_TOOLTIP = "Inactive items are missing items that you have decided not to track.";
-	COLLECTOR_ACTIVATE_MENU_TOOLTIP = "Setting an item as active means you want to put it in the Missing items section and have it count as something you haven't obtained yet.";
-	COLLECTOR_INACTIVATE_MENU_TOOLTIP = "Setting an item as inactive means you want to put it in the Inactive items section and not have it count as something you haven't obtained yet.";
+	COLLECTOR_ACTIVATE_MENU_TOOLTIP = "Setting an item as active means you want to put it in the missing items section and have it count as something you haven't obtained yet.";
+	COLLECTOR_INACTIVATE_MENU_TOOLTIP = "Setting an item as inactive means you want to put it in the inactive items section and not have it count as something you haven't obtained yet.";
+	COLLECTOR_TOGGLE_MODEL_TOOLTIP = "Clicking this will toggle the window that shows the 3D model for the selected item.";
+	
+	
+	COLLECTOR_TOTAL_SPECIAL_ITEMS_FIRST = " (+ ";
+	COLLECTOR_TOTAL_SPECIAL_ITEMS_SECOND = " extra items)";
 
 
 	COLLECTOR_USAGE = "The Collector usage:";
@@ -139,7 +147,7 @@
 	COLLECTOR_GENDER_WARNING = "WARNING - The Collector had a problem getting the player's gender";
 
 
-	COLLECTOR_UNKNOWN_ITEM_1 = "WARNING - The Collector didn't have spellID:";
+	COLLECTOR_UNKNOWN_ITEM_1 = "WARNING - The Collector didn't have spell ID:";
 	COLLECTOR_UNKNOWN_ITEM_2 = " name:";
 	COLLECTOR_UNKNOWN_ITEM_3 = "in its database. Please contact the mod author.";
 
@@ -171,7 +179,7 @@
 	COLLECTOR_BOP = "Bind on Pickup\n";
 	COLLECTOR_BOE = "Bind on Equip\n";
 	COLLECTOR_BOA = "Bind on Account\n";
-	COLLECTOR_OBTAINED_FROM = "Obtained From:";
+	COLLECTOR_OBTAINED_FROM = "Obtained from:";
 	COLLECTOR_VENDOR = "Vendor";
 	COLLECTOR_REQUIRES = "\nRequires:";
 	COLLECTOR_QUEST = "Quest";
@@ -183,7 +191,7 @@
 	COLLECTOR_TOOLTIP_PROBLEM = "Problem getting tooltip info";
 
 
-	COLLECTOR_DEFAULTS_WARNING = "WARNING - The Collector settings using defaults";
+	COLLECTOR_DEFAULTS_WARNING = "WARNING - The Collector is using default settings";
 	COLLECTOR_CLOSE = "Close";
 	COLLECTOR_COMPANIONS = "Companions";
 	COLLECTOR_MOUNTS = "Mounts";
@@ -192,12 +200,12 @@
 	COLLECTOR_TOGGLE_INFO = "Toggles the Collector window";
 	COLLECTOR_CONFIG_1 = "Buttons to show the main window:";
 	COLLECTOR_CONFIG_2 = "Pets/Mounts window";
-	COLLECTOR_CONFIG_3 = "Uncheck to hide the button the Pets window";
-	COLLECTOR_CONFIG_4 = "Check to show the button on the Pets window";
-	COLLECTOR_CONFIG_5 = "Uncheck to hide the button on the Character window";
-	COLLECTOR_CONFIG_6 = "Check to show the button the Character window";
-	COLLECTOR_CONFIG_7 = "Show the button on the left side of the Character window";
-	COLLECTOR_CONFIG_8 = "Show the button on the right side of the Character window";
+	COLLECTOR_CONFIG_3 = "Uncheck to hide the button on the pets window";
+	COLLECTOR_CONFIG_4 = "Check to show the button on the pets window";
+	COLLECTOR_CONFIG_5 = "Uncheck to hide the button on the character window";
+	COLLECTOR_CONFIG_6 = "Check to show the button on the character window";
+	COLLECTOR_CONFIG_7 = "Show the button on the left side of the character window";
+	COLLECTOR_CONFIG_8 = "Show the button on the right side of the character window";
 	COLLECTOR_CHAR_WINDOW = "Character window";
 
 --end

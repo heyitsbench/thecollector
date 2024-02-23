@@ -1,6 +1,9 @@
+v0.7.7 (Feb 23, 2024)
+  - Minor code adjustments.
+
 v0.7.6 (Feb 23, 2024)
   - Corrected metadata of new entries.
-  
+
 v0.7.5 (Feb 23, 2024)
   - Added some missing pets and mounts.
 
