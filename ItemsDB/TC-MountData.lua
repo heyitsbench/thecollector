@@ -16,7 +16,7 @@ TheCollectorCommonMountTable = {
   [67466]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Ashes of Al'ar
-  [40192]={1, 3, { {"Kael'thas Sunstrider", "The Eye", "1.6"} } },
+  [40192]={1, 3, { {COLLECTOR_DROP_KAEL_THAS, "The Eye", "1.6"} } },
 
   -- Azure Drake
   [59567]={1, 3, { {"Malygos", "The Eye of Eternity", "1"} } },
@@ -25,7 +25,7 @@ TheCollectorCommonMountTable = {
   [41514]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
 
   -- Big Love Rocket
-  [71342]={1, 3, { {"Apothecary Hummel", "Shadowfang Keep (during Love is in the Air)", "1"} } },
+  [71342]={1, 3, { {COLLECTOR_DROP_APOTHECARY_HUMMEL, COLLECTOR_VALENTINES_DAY_SFK, "1"} } },
 
   -- Bloodbathed Frostbrood Vanquisher
   [72808]={1, 5, "Glory of the Icecrown Raider (10)"},
@@ -212,11 +212,11 @@ TheCollectorCommonMountTable = {
 TheCollectorAllianceMountTable = {
   -- Argent Hippogryph
   [63844]={1, 1, {
-                  {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_IRISEE,               "76.2, 19.3", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_RILLIE_SPINDLENUT,    "76.5, 19.7", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_ROOK_HAWKFIST,        "76.3, 19.2", COLLECTOR_ICECROWN, "150 Champion's Seal"},
+                  {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL"},
+                  {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL"},
+                  {COLLECTOR_IRISEE,               "76.2, 19.3", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL"},
+                  {COLLECTOR_RILLIE_SPINDLENUT,    "76.5, 19.7", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL"},
+                  {COLLECTOR_ROOK_HAWKFIST,        "76.3, 19.2", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL"},
                  }
            },
 
@@ -227,7 +227,7 @@ TheCollectorAllianceMountTable = {
   [61229]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "2,000g"} } },
 
   -- Black Battlestrider
-  [22719]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 Honor Points"} } },
+  [22719]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black Stallion Bridle
   [470]={1, 1, { {COLLECTOR_UNGER_STATFORTH, "8.6, 54.5", COLLECTOR_WETLANDS, "1g"} } },
@@ -236,19 +236,19 @@ TheCollectorAllianceMountTable = {
   [60118]={1, 5, "For The Alliance!"},
 
   -- Black War Elekk
-  [48027]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 Honor Points"} } },
+  [48027]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Mammoth
-  [59785]={1, 1, { {COLLECTOR_KNIGHT_DAMERON, "51.7, 17.5", "Wintergrasp", "300 Stone Keeper's Shard"} } },
+  [59785]={1, 1, { {COLLECTOR_KNIGHT_DAMERON, "51.7, 17.5", "Wintergrasp", "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
 
   -- Black War Ram
-  [22720]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 Honor Points"} } },
+  [22720]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Steed
-  [22717]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 Honor Points"} } },
+  [22717]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Tiger
-  [22723]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 Honor Points"} } },
+  [22723]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Blue Dragonhawk
   [61996]={1, 5, "Mountain o' Mounts"},
@@ -296,17 +296,17 @@ TheCollectorAllianceMountTable = {
   [34790]={1, 1, { {COLLECTOR_ALDRAAN, "42.9, 42.5", COLLECTOR_NAGRAND, "\n100 Halaa Battle Token\n20 Halaa Research Token"} } },
 
   -- Darnassian Mistsaber
-  [63637]={1, 1, { {COLLECTOR_ROOK_HAWKFIST, "76.3, 19.2", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63637]={1, 1, { {COLLECTOR_ROOK_HAWKFIST, "76.3, 19.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Ebon Gryphon
   [32239]={1, 1, { {COLLECTOR_BRUNN_FLAMEBEARD, "37.6, 56.0", COLLECTOR_SHADOWMOON_VALLEY, "50g"},
                    {COLLECTOR_MEI_FRANCIS,      "58.1, 42.5", COLLECTOR_DALARAN,           "50g"}, } },
 
   -- Exodar Elekk
-  [63639]={1, 1, { {COLLECTOR_IRISEE, "76.2, 19.3", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63639]={1, 1, { {COLLECTOR_IRISEE, "76.2, 19.3", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Gnomeregan Mechanostrider
-  [63638]={1, 1, { {COLLECTOR_RILLIE_SPINDLENUT, "76.5, 19.7", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63638]={1, 1, { {COLLECTOR_RILLIE_SPINDLENUT, "76.5, 19.7", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Golden Gryphon
   [32235]={1, 1, { {COLLECTOR_BRUNN_FLAMEBEARD, "37.6, 56.0", COLLECTOR_SHADOWMOON_VALLEY, "50g"},
@@ -338,7 +338,7 @@ TheCollectorAllianceMountTable = {
   [35714]={1, 1, { {COLLECTOR_TORALLIUS, "81.5, 52.0", COLLECTOR_EXODAR, "10g"} } },
 
   -- Great Red Elekk
-  [65637]={1, 1, { {COLLECTOR_IRISEE, "76.2, 19.3", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65637]={1, 1, { {COLLECTOR_IRISEE, "76.2, 19.3", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Green Mechanostrider
   [17453]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "1g"} } },
@@ -347,10 +347,10 @@ TheCollectorAllianceMountTable = {
   [59799]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "1,000g", "The Sons of Hodir - Revered"} } },
 
   -- Ironforge Ram
-  [63636]={1, 1, { {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63636]={1, 1, { {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Mekgineer's Chopper
-  [60424]={2, 4, "Engineering", "450"},
+  [60424]={2, 4, COLLECTOR_ENGINEERING, "450"},
 
   -- Pinto
   [472]={1, 1, {
@@ -365,13 +365,13 @@ TheCollectorAllianceMountTable = {
   [35711]={1, 1, { {COLLECTOR_TORALLIUS, "81.5, 52.0", COLLECTOR_EXODAR, "1g"} } },
 
   -- Quel'dorei Steed
-  [66090]={1, 1, { {COLLECTOR_HIREN_LORESONG, "76.1, 19.6", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [66090]={1, 1, { {COLLECTOR_HIREN_LORESONG, "76.1, 19.6", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Red Mechanostrider
   [10873]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "1g"} } },
 
   -- Silver Covenant Hippogryph
-  [66087]={1, 1, { {COLLECTOR_HIREN_LORESONG, "76.1, 19.6", COLLECTOR_ICECROWN, "150 Champion's Seal"} } },
+  [66087]={1, 1, { {COLLECTOR_HIREN_LORESONG, "76.1, 19.6", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Silver Riding Talbuk
   [39317]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", "Kurenai - Exalted"} } },
@@ -388,13 +388,13 @@ TheCollectorAllianceMountTable = {
 
   -- Stormpike Battle Charger
   [23510]={1, 1, {
-                  {COLLECTOR_GAELDEN_HAMMERSMITH,   "44.2, 18.2", "Alterac Valley",    "50,000 Honor Points"},
-                  {COLLECTOR_THANTHALDIS_SNOWGLEAM, "39.5, 81.7", "Alterac Mountains", "50,000 Honor Points"}
+                  {COLLECTOR_GAELDEN_HAMMERSMITH,   "44.2, 18.2", "Alterac Valley",    "50,000 "..COLLECTOR_HONOR_POINT},
+                  {COLLECTOR_THANTHALDIS_SNOWGLEAM, "39.5, 81.7", "Alterac Mountains", "50,000 "..COLLECTOR_HONOR_POINT}
                  }
            },
 
   -- Stormwind Steed
-  [63232]={1, 1, { {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63232]={1, 1, { {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Striped Dawnsaber
   [66847]={1, 1, { {COLLECTOR_LELANAI, "38.3, 15.7", COLLECTOR_DARNASSUS, "1g"} } },
@@ -430,7 +430,7 @@ TheCollectorAllianceMountTable = {
   [23239]={1, 1, { {COLLECTOR_VERON_AMBERSTILL, "63.5, 50.7", COLLECTOR_DUN_MOROGH, "10g"} } },
 
   -- Swift Gray Steed
-  [65640]={1, 1, { {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65640]={1, 1, { {COLLECTOR_CORPORAL_ARTHUR_FLEW, "76.5, 19.2", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Swift Green Gryphon
   [32290]={1, 1, { {COLLECTOR_BRUNN_FLAMEBEARD, "37.6, 56.0", COLLECTOR_SHADOWMOON_VALLEY, "100g"},
@@ -443,7 +443,7 @@ TheCollectorAllianceMountTable = {
   [23219]={1, 1, { {COLLECTOR_LELANAI, "38.3, 15.7", COLLECTOR_DARNASSUS, "10g"} } },
 
   -- Swift Moonsaber
-  [65638]={1, 1, { {COLLECTOR_ROOK_HAWKFIST, "76.3, 19.2", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65638]={1, 1, { {COLLECTOR_ROOK_HAWKFIST, "76.3, 19.2", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Swift Palomino
   [23227]={1, 1, {
@@ -465,7 +465,7 @@ TheCollectorAllianceMountTable = {
   [23338]={1, 1, { {COLLECTOR_LELANAI, "38.3, 15.7", COLLECTOR_DARNASSUS, "10g"} } },
 
   -- Swift Violet Ram
-  [65643]={1, 1, { {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65643]={1, 1, { {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Swift White Mechanostrider
   [23223]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "10g"} } },
@@ -494,7 +494,7 @@ TheCollectorAllianceMountTable = {
   [61425]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "20,000g"} } },
 
   -- Turbostrider
-  [65642]={1, 1, { {COLLECTOR_RILLIE_SPINDLENUT, "76.5, 19.7", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65642]={1, 1, { {COLLECTOR_RILLIE_SPINDLENUT, "76.5, 19.7", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Unpainted Mechanostrider
   [17454]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "1g"} } },
@@ -523,11 +523,11 @@ TheCollectorAllianceMountTable = {
 TheCollectorHordeMountTable = {
   -- Argent Hippogryph
   [63844]={1, 1, {
-                  {COLLECTOR_DORU_THUNDERHORN,   "76.2, 24.5", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_ELIZA_KILLIAN,      "76.5, 24.2", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_FREKA_BLOODAXE,     "76.4, 24.3", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_SAMAMBA,            "76.1, 24.5", COLLECTOR_ICECROWN, "150 Champion's Seal"},
-                  {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "150 Champion's Seal"},
+                  {COLLECTOR_DORU_THUNDERHORN,   "76.2, 24.5", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL},
+                  {COLLECTOR_ELIZA_KILLIAN,      "76.5, 24.2", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL},
+                  {COLLECTOR_FREKA_BLOODAXE,     "76.4, 24.3", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL},
+                  {COLLECTOR_SAMAMBA,            "76.1, 24.5", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL},
+                  {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL},
                  }
            },
 
@@ -547,16 +547,16 @@ TheCollectorHordeMountTable = {
   [60119]={1, 5, "For The Horde!"},
 
   -- Black War Kodo
-  [22718]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 Honor Points"} } },
+  [22718]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Mammoth
-  [59788]={1, 1, { {COLLECTOR_STONE_GUARD_MUKAR, "51.7, 17.5", "Wintergrasp", "300 Stone Keeper's Shard"} } },
+  [59788]={1, 1, { {COLLECTOR_STONE_GUARD_MUKAR, "51.7, 17.5", "Wintergrasp", "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
 
   -- Black War Raptor
-  [22721]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 Honor Points"} } },
+  [22721]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Wolf
-  [22724]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 Honor Points"} } },
+  [22724]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black Wolf
   [64658]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "1g"} } },
@@ -590,7 +590,7 @@ TheCollectorHordeMountTable = {
   [68188]={1, 5, "A Tribute to Immortality"},
 
   -- Darkspear Raptor
-  [63635]={1, 1, { {COLLECTOR_SAMAMBA, "76.1, 24.5", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63635]={1, 1, { {COLLECTOR_SAMAMBA, "76.1, 24.5", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Dark Riding Talbuk
   [39316]={1, 1, { {COLLECTOR_COREIEL, "42.8, 42.6", COLLECTOR_NAGRAND, "\n70 Halaa Battle Token\n15 Halaa Research Token"} } },
@@ -605,12 +605,12 @@ TheCollectorHordeMountTable = {
   [8395]={1, 1, { {COLLECTOR_ZJOLNIR, "55.2, 75.6", COLLECTOR_DUROTAR, "1g"} } },
 
   -- Forsaken Warhorse
-  [63643]={1, 1, { {COLLECTOR_ELIZA_KILLIAN, "76.5, 24.2", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63643]={1, 1, { {COLLECTOR_ELIZA_KILLIAN, "76.5, 24.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Frostwolf Howler
   [23509]={1, 1, {
-                  {COLLECTOR_GRUNNDA_WOLFHEART, "49.0, 85.5", "Alterac Valley",    "50,000 Honor Points"},
-                  {COLLECTOR_JEKYLL_FLANDRING,  "62.8, 59.4", "Alterac Mountains", "50,000 Honor Points"},
+                  {COLLECTOR_GRUNNDA_WOLFHEART, "49.0, 85.5", "Alterac Valley",    "50,000 "..COLLECTOR_HONOR_POINT},
+                  {COLLECTOR_JEKYLL_FLANDRING,  "62.8, 59.4", "Alterac Mountains", "50,000 "..COLLECTOR_HONOR_POINT},
                  }
            },
 
@@ -634,7 +634,7 @@ TheCollectorHordeMountTable = {
   [23248]={1, 1, { {COLLECTOR_HARB_CLAWHOOF, "47.5, 58.5", COLLECTOR_MULGORE, "10g"} } },
 
   -- Great Golden Kodo
-  [65641]={1, 1, { {COLLECTOR_DORU_THUNDERHORN, "76.2, 24.5", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65641]={1, 1, { {COLLECTOR_DORU_THUNDERHORN, "76.2, 24.5", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Great White Kodo
   [23247]={1, 1, { {COLLECTOR_HARB_CLAWHOOF, "47.5, 58.5", COLLECTOR_MULGORE, "10g"} } },
@@ -650,13 +650,13 @@ TheCollectorHordeMountTable = {
   [59797]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "1,000g", "The Sons of Hodir - Revered"} } },
 
   -- Mechano-Hog
-  [55531]={2, 4, "Engineering", "450"},
+  [55531]={2, 4, COLLECTOR_ENGINEERING, "450"},
 
   -- Ochre Skeletal Warhorse
   [66846]={1, 1, { {COLLECTOR_ZACARIAH_POST, "59.9, 52.6", COLLECTOR_TIRISFAL_GLADES, "10g"} } },
 
   -- Orgrimmar Wolf
-  [63640]={1, 1, { {COLLECTOR_FREKA_BLOODAXE, "76.4, 24.3", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63640]={1, 1, { {COLLECTOR_FREKA_BLOODAXE, "76.4, 24.3", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Purple Hawkstrider
   [35018]={1, 1, { {COLLECTOR_WINAESTRA, "61.0, 54.7", COLLECTOR_EVERSONG_WOODS, "1g"} } },
@@ -674,10 +674,10 @@ TheCollectorHordeMountTable = {
   [17462]={1, 1, { {COLLECTOR_ZACARIAH_POST, "59.9, 52.6", COLLECTOR_TIRISFAL_GLADES, "1g"} } },
 
   -- Red Skeletal Warhorse
-  [22722]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 Honor Points"} } },
+  [22722]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Silvermoon Hawkstrider
-  [63642]={1, 1, { {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63642]={1, 1, { {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Silver Riding Talbuk
   [39317]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
@@ -686,10 +686,10 @@ TheCollectorHordeMountTable = {
   [34898]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
 
   -- Sunreaver Dragonhawk
-  [66088]={1, 1, { {COLLECTOR_VASARIN_REDMORN, "76, 24", COLLECTOR_ICECROWN, "150 Champion's Seal"} } },
+  [66088]={1, 1, { {COLLECTOR_VASARIN_REDMORN, "76, 24", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Sunreaver Hawkstrider
-  [66091]={1, 1, { {COLLECTOR_VASARIN_REDMORN, "76, 24", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [66091]={1, 1, { {COLLECTOR_VASARIN_REDMORN, "76, 24", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Swift Blue Raptor
   [23241]={1, 1, { {COLLECTOR_ZJOLNIR, "55.2, 75.6", COLLECTOR_DUROTAR, "10g"} } },
@@ -698,7 +698,7 @@ TheCollectorHordeMountTable = {
   [23250]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "10g"} } },
 
   -- Swift Burgundy Wolf
-  [65646]={1, 1, { {COLLECTOR_FREKA_BLOODAXE, "76.4, 24.3", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65646]={1, 1, { {COLLECTOR_FREKA_BLOODAXE, "76.4, 24.3", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Swift Gray Wolf
   [23252]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "10g"} } },
@@ -726,14 +726,14 @@ TheCollectorHordeMountTable = {
   [35027]={1, 1, { {COLLECTOR_WINAESTRA, "61.0, 54.7", COLLECTOR_EVERSONG_WOODS, "10g"} } },
 
   -- Swift Purple Raptor
-  [65644]={1, 1, { {COLLECTOR_SAMAMBA, "76.1, 24.5", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65644]={1, 1, { {COLLECTOR_SAMAMBA, "76.1, 24.5", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Swift Purple Wind Rider
   [32297]={1, 1, { {COLLECTOR_DAMA_WILDMANE, "29.2, 29.5", COLLECTOR_SHADOWMOON_VALLEY, "100g"},
                    {COLLECTOR_MEI_FRANCIS,   "58.1, 42.5", COLLECTOR_DALARAN,           "100g"}, } },
 
   -- Swift Red Hawkstrider
-  [65639]={1, 1, { {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65639]={1, 1, { {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Swift Red Wind Rider
   [32246]={1, 1, { {COLLECTOR_DAMA_WILDMANE, "29.2, 29.5", COLLECTOR_SHADOWMOON_VALLEY, "100g"},
@@ -743,7 +743,7 @@ TheCollectorHordeMountTable = {
   [23251]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "10g"} } },
 
   -- Swift Warstrider
-  [35028]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 Honor Points"} } },
+  [35028]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Swift Yellow Wind Rider
   [32296]={1, 1, { {COLLECTOR_DAMA_WILDMANE, "29.2, 29.5", COLLECTOR_SHADOWMOON_VALLEY, "100g"},
@@ -763,7 +763,7 @@ TheCollectorHordeMountTable = {
   [580]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "1g"} } },
 
   -- Thunder Bluff Kodo
-  [63641]={1, 1, { {COLLECTOR_DORU_THUNDERHORN, "76.2, 24.5", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [63641]={1, 1, { {COLLECTOR_DORU_THUNDERHORN, "76.2, 24.5", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Traveler's Tundra Mammoth
   [61447]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "20,000g"} } },
@@ -784,7 +784,7 @@ TheCollectorHordeMountTable = {
   [39319]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
 
   -- White Skeletal Warhorse
-  [65645]={1, 1, { {COLLECTOR_ELIZA_KILLIAN, "76.5, 24.2", COLLECTOR_ICECROWN, "500g, 5 Champion's Seal"} } },
+  [65645]={1, 1, { {COLLECTOR_ELIZA_KILLIAN, "76.5, 24.2", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- White War Talbuk
   [34897]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
@@ -798,7 +798,7 @@ TheCollectorHordeMountTable = {
 -- These are mounts that are only available to Alliance Paladins.
 TheCollectorAlliancePaladinMountTable = {
   -- Argent Charger
-  [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Charger
   [23214]={1, 7, "Trained at any Paladin trainer\nRequires Level 60"},
@@ -812,7 +812,7 @@ TheCollectorAlliancePaladinMountTable = {
 -- These are mounts that are only available to Horde Paladins.
 TheCollectorHordePaladinMountTable = {
   -- Argent Charger
-  [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 Champion's Seal"} } },
+  [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Charger
   [34767]={1, 7, "Trained at any Paladin trainer\nRequires Level 60"},
@@ -840,7 +840,7 @@ TheCollectorDeathKnightMountTable = {
   [48778]={1, 7, "Reward from quest Into the Realm of Shadows"},
 
   -- Winged Steed of the Ebon Blade
-  [54729]={1, 1, { {COLLECTOR_DREAD_COMMANDER_THALANOR, "84.1, 49.9", "Eastern Plaguelands", "1,000g"} } },
+  [54729]={1, 1, { {COLLECTOR_DREAD_COMMANDER_THALANOR, "84.1, 49.9", COLLECTOR_EASTERN_PLAGUELANDS, "1,000g"} } },
 };
 
 
@@ -848,10 +848,10 @@ TheCollectorDeathKnightMountTable = {
 -- These are mounts that only engineers can make.
 TheCollectorEngineerMountTable = {
   -- Flying Machine
-  [44153]={2, 4, "Engineering", "350"},
+  [44153]={2, 4, COLLECTOR_ENGINEERING, "350"},
 
   -- Turbo-Charged Flying Machine
-  [44151]={2, 4, "Engineering", "375"},
+  [44151]={2, 4, COLLECTOR_ENGINEERING, "375"},
 };
 
 
@@ -859,13 +859,13 @@ TheCollectorEngineerMountTable = {
 -- These are mounts that only tailors can make.
 TheCollectorTailorMountTable = {
   -- Flying Carpet
-  [61451]={2, 4, "Tailoring", "410"},
+  [61451]={2, 4, COLLECTOR_TAILORING, "410"},
 
   -- Frost Flying Carpet
   [75596]={1, 1, { {"Frozo the Renowned", "40.12, 28.05", COLLECTOR_DALARAN, "6 Frozen Orb"} } },
 
   -- Magnificent Flying Carpet
-  [61309]={2, 4, "Tailoring", "425"},
+  [61309]={2, 4, COLLECTOR_TAILORING, "425"},
 
 --  [60975]=1,  -- Swift Ebonweave Carpet
 --  [61442]=1,  -- Swift Mooncloth Carpet
