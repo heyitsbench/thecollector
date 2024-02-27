@@ -4,9 +4,11 @@
 	COLLECTOR_INITIALIZATION_SECOND = " initialized. Enter |cffffff00/thecollector show|r or |cffffff00/tc show|r to display the window.";
 
 	COLLECTOR_ALTERAC_MOUNTAINS = "Alterac Mountains";
+	COLLECTOR_ALTERAC_VALLEY = "Alterac Valley";
 	COLLECTOR_AZSHARA = "Azshara";
 	COLLECTOR_BADLANDS = "Badlands";
 	COLLECTOR_BARRENS = "The Barrens";
+	COLLECTOR_CULLING_OF_STRATHOLME = "The Culling of Stratholme";
 	COLLECTOR_DALARAN = "Dalaran";
 	COLLECTOR_DALARAN_SEWERS = "Dalaran Sewers";
 	COLLECTOR_DARNASSUS = "Darnassus";
@@ -16,41 +18,61 @@
 	COLLECTOR_DUROTAR = "Durotar";
 	COLLECTOR_DUSTWALLOW_MARSH = "Dustwallow Marsh";
 	COLLECTOR_ELWYNN_FOREST = "Elwynn Forest";
+	COLLECTOR_EASTERN_PLAGUELANDS = "Eastern Plaguelands";
 	COLLECTOR_EVERSONG_WOODS = "Eversong Woods";
 	COLLECTOR_EXODAR = "The Exodar";
+	COLLECTOR_EYE_OF_ETERNITY = "The Eye of Eternity";
 	COLLECTOR_FERALAS = "Feralas";
 	COLLECTOR_GNOMEREGAN = "Gnomeregan";
 	COLLECTOR_HILLSBRAD_FOOTHILLS = "Hillsbrad Foothills";
 	COLLECTOR_HOWLING_FJORD = "Howling Fjord";
 	COLLECTOR_ICECROWN = "Icecrown";
 	COLLECTOR_IRONFORGE = "Ironforge";
+	COLLECTOR_KARAZHAN = "Karazhan";
 	COLLECTOR_MAGISTERS_TERRACE = "Magister's Terrace";
 	COLLECTOR_MULGORE = "Mulgore";
 	COLLECTOR_NAGRAND = "Nagrand";
 	COLLECTOR_NETHERSTORM = "Netherstorm";
+	COLLECTOR_NORTHREND = "Northrend";
+	COLLECTOR_OBSIDIAN_SANCTUM = "The Obsidian Sanctum";
+	COLLECTOR_OCULUS = "Oculus";
+	COLLECTOR_ONYXIAS_LAIR = "Onyxia's Lair";
 	COLLECTOR_ORGRIMMAR = "Orgrimmar";
+	COLLECTOR_SETHEKK_HALLS = "Sethekk Halls";
 	COLLECTOR_SHADOWMOON_VALLEY = "Shadowmoon Valley";
 	COLLECTOR_SHOLAZAR_BASIN = "Sholazar Basin";
 	COLLECTOR_SILVERPINE_FOREST = "Silverpine Forest";
+	COLLECTOR_STORM_PEAKS = "The Storm Peaks";
 	COLLECTOR_STORMWIND = "Stormwind City";
 	COLLECTOR_STRANGLETHORN_VALE = "Stranglethorn Vale";
+	COLLECTOR_STRATHOLME = "Stratholme";
 	COLLECTOR_SWAMP_OF_SORROWS = "Swamp of Sorrows";
 	COLLECTOR_TEMPLE_OF_AHNQIRAJ = "Temple of Ahn'Qiraj";
 	COLLECTOR_TEROKKAR_FOREST = "Terokkar Forest";
+	COLLECTOR_THE_EYE = "The Eye";
 	COLLECTOR_THOUSAND_NEEDLES = "Thousand Needles";
 	COLLECTOR_THUNDER_BLUFF = "Thunder Bluff";
 	COLLECTOR_TIRISFAL_GLADES = "Tirisfal Glades";
+	COLLECTOR_TRIAL_OF_THE_GRAND_CRUSADER = "Trial of the Grand Crusader";
+	COLLECTOR_ULDUAR = "Ulduar";
 	COLLECTOR_UNDERCITY = "Undercity";
 	COLLECTOR_UNGORO_CRATER = "Un'Goro Crater";
+	COLLECTOR_UTGARDE_PINNACLE = "Utgarde Pinnacle";
+	COLLECTOR_VAULT_OF_ARCHAVON = "Vault of Archavon";
 	COLLECTOR_WAILING_CAVERNS = "Wailing Caverns";
 	COLLECTOR_WETLANDS = "Wetlands";
 	COLLECTOR_WINTERSPRING = "Winterspring";
+	COLLECTOR_WINTERGRASP = "Wintergrasp";
 	COLLECTOR_ZANGARMARSH = "Zangarmarsh";
+	COLLECTOR_ZULAMAN = "Zul'Aman";
 	COLLECTOR_ZULDRAK = "Zul'Drak";
 	COLLECTOR_ZULGURUB = "Zul'Gurub";
+    COLLECTOR_DMF = "Darkmoon Faire";
 
 
 	COLLECTOR_CHAMPION_SEAL = "Champion's Seals";
+	COLLECTOR_HONOR_POINT = "Honor Points";
+	COLLECTOR_STONE_KEEPERS_SHARD = "Stone Keeper's Shards";
 	COLLECTOR_IRISEE = "Irisee";
 	COLLECTOR_MAGUS_TIRTH = "Magus Tirth";
 	COLLECTOR_XANTISH = "Xan'tish";
@@ -121,6 +143,113 @@
 	COLLECTOR_GRUNNDA_WOLFHEART = "Grunnda Wolfheart";
 	COLLECTOR_JEKYLL_FLANDRING = "Jekyll Flandring";
 	COLLECTOR_DREAD_COMMANDER_THALANOR = "Dread Commander Thalanor";
+	COLLECTOR_JEPETTO_JOYBUZZ = "Jepetto Joybuzz";
+    COLLECTOR_COOKIE = "Cookie";
+    COLLECTOR_GEEN = "Geen";
+    COLLECTOR_TRELLIS_MORNINGSUN = "Trellis Morningsun";
+    COLLECTOR_MIDSUMMER_VENDOR = "Midsummer Merchant/Supplier";
+    COLLECTOR_NOBLEGARDEN_VENDOR = "Noblegarden vendor";
+    COLLECTOR_LIL_TIMMY = "Lil Timmy";
+    COLLECTOR_TRADER_NARASU = "Trader Narasu";
+    COLLECTOR_FROZO_RENOWNED = "Frozo the Renowned";
+
+
+    COLLECTOR_ENGINEERING = "Engineering";
+    COLLECTOR_TAILORING = "Tailoring";
+    COLLECTOR_RARE_FISHING = "Rare drop from fishing";
+    COLLECTOR_MR_PINCHY = "Possible wish from fishing up Mr. Pinchy";
+    COLLECTOR_HEX_STICK = "Use the Amani Hex Stick in Zul'Aman on the frogs";
+    COLLECTOR_INTO_THE_REALM_OF_SHADOWS = "Reward from quest Into the Realm of Shadows";
+
+
+    COLLECTOR_ORACLES_REVERED = "The Oracles - Revered";
+    COLLECTOR_SPOREGGAR_EXALTED = "Sporeggar - Exalted";
+    COLLECTOR_SHATARI_SKYGUARD_EXALTED = "Sha'tari Skyguard - Exalted";
+    COLLECTOR_KALUAK_EXALTED = "The Kalu'ak - Exalted";
+    COLLECTOR_NETHERWING_EXALTED = "Netherwing - Exalted";
+    COLLECTOR_WYRMREST_ACCORD_EXALTED = "The Wyrmrest Accord - Exalted";
+    COLLECTOR_CENARION_EXPEDITION_EXALTED = "Cenarion Expedition - Exalted";
+    COLLECTOR_SONS_OF_HODIR_EXALTED = "The Sons of Hodir - Exalted";
+    COLLECTOR_SONS_OF_HODIR_REVERED = "The Sons of Hodir - Revered";
+    COLLECTOR_KURENAI_EXALTED = "Kurenai - Exalted";
+    COLLECTOR_WINTERSABER_TRAINERS_EXALTED = "Wintersaber Trainers - Exalted";
+    COLLECTOR_MAGHAR_EXALTED = "The Mag'har - Exalted";
+
+
+    COLLECTOR_ORPHANAGE = "Back to the Orphanage";
+    COLLECTOR_CHAMPION_RISES = "A Champion Rises";
+    COLLECTOR_BECOMING_A_PARENT = "Becoming a Parent";
+    COLLECTOR_CROCOLISKS_IN_THE_CITY = "Crocolisks in the City fishing daily";
+    COLLECTOR_SKYWING = "Skywing";
+    COLLECTOR_SPAWN_OF_JUBJUB = "Spawn of Jubjub";
+    COLLECTOR_OOX_OF_YOUR_OWN = "An OOX of Your Own";
+    COLLECTOR_A_WARDEN_OF_FACTION = "A Warden of the Alliance (or Horde)";
+    COLLECTOR_DALARAN_FISHING_DAILY = "Dalaran fishing daily";
+    COLLECTOR_CLUCK = "CLUCK!";
+    COLLECTOR_KIBLERS_EXOTIC_PETS = "Kibler's Exotic Pets";
+    COLLECTOR_BRUNNHILDAR_DAILY = "Brunnhildar daily quest";
+    COLLECTOR_THEY_GROW_UP_SO_FAST = "They Grow Up So Fast";
+    COLLECTOR_BANG_A_GONG = "Bang a Gong!";
+    COLLECTOR_LFG_ACHIEVEMENT = "Looking for Multitudes";
+    COLLECTOR_PILGRIM = "Pilgrim";
+    COLLECTOR_HIGHER_LEARNING = "Higher Learning";
+    COLLECTOR_LIL_GAME_HUNTER = "Lil' Game Hunter";
+    COLLECTOR_NASTY = "En-Ay-Es-Tee-Why";
+    COLLECTOR_SHOP_PET_SMART = "Shop Smart, Shop Pet...Smart";
+    COLLECTOR_LEADING_THE_CAVALRY = "Leading the Cavalry";
+    COLLECTOR_GLORY_ICECROWN_RAIDER = "Glory of the Icecrown Raider";
+    COLLECTOR_GLORY_ULDUAR_RAIDER = "Glory of the Ulduar Raider";
+    COLLECTOR_GLORY_HERO = "Glory of the Hero";
+    COLLECTOR_HOLIDAY_META = "What A Long, Strange Trip It's Been";
+    COLLECTOR_FOR_THE_ALLIANCE = "For The Alliance!";
+    COLLECTOR_MOUNTAIN_O_MOUNTS = "Mountain o' Mounts";
+    COLLECTOR_TRIBUTE_TO_IMMORTALITY = "A Tribute to Immortality";
+    COLLECTOR_FOR_THE_HORDE = "For The Horde!";
+    COLLECTOR_GLORY_RAIDER = "Reward from Glory of the Raider";
+
+
+    COLLECTOR_NEAR_SPIRITS_VALLEY = "wanders near Valley of Spirits";
+    COLLECTOR_NEAR_CANALS = "wanders Canal district";
+    COLLECTOR_TRAINED_AT_ANY = "Trained at any ";
+    COLLECTOR_PALADIN = "Paladin";
+    COLLECTOR_WARLOCK = "Warlock";
+    COLLECTOR_TRAINER_REQUIRES_LEVEL = " trainer\nRequires Level ";
+
+
+    COLLECTOR_VALENTINES_DAY = "During Valentine's Day";
+    COLLECTOR_MIDSUMMER_SLAVE_PENS = "The Slave Pens (during Midsummer Festival)";
+    COLLECTOR_HALLOWEEN_SCARLET_MONASTERY = "Scarlet Monastery (during Halloween)";
+    COLLECTOR_MIDSUMMER_MAIN_CITIES = "Main cities during Midsummer world event";
+    COLLECTOR_NOBLEGARDEN = "During Noblegarden world event";
+    COLLECTOR_VALENTINES_DAY_SFK = "Shadowfang Keep (during Love is in the Air)";
+    COLLECTOR_PREPATCH_KARA = "Karazhan\n(Only appears during WotLK event)";
+    COLLECTOR_BREWFEST_BRD = "Blackrock Depths (during Brewfest)";
+    COLLECTOR_RANDOM_DUNGEON = "random dungeon";
+    COLLECTOR_HEROIC = "Heroic";
+    COLLECTOR_TIMED_RUN = "Timed Run";
+    COLLECTOR_REMOVED_IN = "Removed in ";
+    COLLECTOR_LEGACY_EPIC_MOUNT = "Old-style armorless epic mount\nNo longer sold by vendors";
+
+
+    COLLECTOR_FISHING_DAILY_BAG = "Bag of Fishing Treasures";
+    COLLECTOR_MYSTERIOUS_EGG = "Mysterious Egg";
+    COLLECTOR_OOZING_BAG = "Oozing Bag";
+    COLLECTOR_OOZING_BAG_DESC = "Bag drops from oozes around the world";
+    COLLECTOR_GAILY_WRAPPED_PRESENT = "Gaily Wrapped Present";
+    COLLECTOR_GAILY_WRAPPED_PRESENT_DESC = "A Gaily Wrapped Present quest during Winter Veil";
+    COLLECTOR_GLOWCAP = "Glowcap";
+    COLLECTOR_GIFT_OF_ADORATION = "Gift of Adoration";
+    COLLECTOR_BREWFEST_TOKENS = "Brewfest Prize Tokens";
+    COLLECTOR_BURNING_BLOSSOMS = "Burning Blossoms";
+    COLLECTOR_NOBLEGARDEN_CHOCOLATE = "Noblegarden Chocolate";
+    COLLECTOR_ICE_CHEST = "Ice Chest";
+    COLLECTOR_LOOT_BAG = "Loot bag";
+    COLLECTOR_FISHING_POOLS = "fishing pools";
+    COLLECTOR_HYLDNIR_SPOILS = "Hyldnir Spoils";
+    COLLECTOR_HALAA_BATTLE_TOKEN = "Halaa Battle Token";
+    COLLECTOR_HALAA_RESEARCH_TOKEN = "Halaa Research Token";
+    COLLECTOR_HEROISM_EMBLEM = "Emblem of Heroism";
+    COLLECTOR_FROZEN_ORB = "Frozen Orb";
 
 
 	COLLECTOR_MISSING_TOOLTIP = "Missing items are items that you should be able to obtain, but haven't yet.";
@@ -187,8 +316,10 @@
 	COLLECTOR_CRAFTED = "Crafted";
 	COLLECTOR_ACHIEVEMENT = "Achievement";
 	COLLECTOR_TEXT = "Text";
-	COLLECTOR_UNKNOWN = COLLECTOR_TITLE_REQ_UNOBTAINABLE;
+	COLLECTOR_UNKNOWN = "Unknown";
 	COLLECTOR_TOOLTIP_PROBLEM = "Problem getting tooltip info";
+    COLLECTOR_AUTHENTICATOR = "Attach an authenticator to your account";
+    COLLECTOR_UNOBTAINABLE = "Unobtainable";
 
 
 	COLLECTOR_DEFAULTS_WARNING = "WARNING - The Collector is using default settings";
@@ -207,7 +338,7 @@
 	COLLECTOR_CONFIG_7 = "Show the button on the left side of the character window";
 	COLLECTOR_CONFIG_8 = "Show the button on the right side of the character window";
 	COLLECTOR_CHAR_WINDOW = "Character window";
-    
+
     -- Title descriptions
     COLLECTOR_TITLE_REQ_GLADIATOR = "Top 0.5% of arena teams at end of previous season";
     COLLECTOR_TITLE_REQ_DUELIST = "Top 3.0% of arena teams at end of previous season";
@@ -269,8 +400,7 @@
     COLLECTOR_TITLE_REQ_SILVERMOON = "Earn exalted status with and the right to represent Silvermoon in the Argent Tournament";
     COLLECTOR_TITLE_REQ_THUNDER_BLUFF = "Earn exalted status with and the right to represent Thunder Bluff in the Argent Tournament";
     COLLECTOR_TITLE_REQ_UNDERCITY = "Earn exalted status with and the right to represent the Undercity in the Argent Tournament";
-    COLLECTOR_TITLE_REQ_CRUSADER_ALLY = "Earn exalted status with the Argent Crusade and the right to represent the Alliance in the Argent Tournament";
-    COLLECTOR_TITLE_REQ_CRUSADER_HORDE = "Earn exalted status with the Argent Crusade and the right to represent the Horde in the Argent Tournament";
+    COLLECTOR_TITLE_REQ_CRUSADER = "Earn exalted status with the Argent Crusade and the right to represent the Horde in the Argent Tournament";
     COLLECTOR_TITLE_REQ_CHILDREN = "For The Children";
     COLLECTOR_TITLE_REQ_PVP_LEGACY = "Legacy PvP title";
     COLLECTOR_TITLE_REQ_SCARAB_LORD = "Opening Ahn'Qiraj with the Scepter of the Shifting Sands"
@@ -290,5 +420,118 @@
     COLLECTOR_TITLE_REQ_RELENTLESS = "Highest rated arena team in the Battlegroup at end of Season 7";
     COLLECTOR_TITLE_REQ_GRAND = "Participated in the realm first conquest of the Trial of the Grand Crusader with 50 attempts remaining in 25-player mode.";
     COLLECTOR_TITLE_REQ_WRATHFUL = "Highest rated arena team in the Battlegroup at end of Season 8";
+
+
+    COLLECTOR_TCG_MUKLA = "World of Warcraft TCG\nDark Portal pack\nKing Mukla card";
+    COLLECTOR_TCG_KITING = "World of Warcraft TCG\nMarch of the Legion pack\nKiting card";
+    COLLECTOR_TCG_ETHEREAL_PLUNDERER = "World of Warcraft TCG\nHunt for Illidan pack\nEthereal Plunderer card";
+    COLLECTOR_TCG_THUNDERHEAD_HIPPOGRYPH = "World of Warcraft TCG\nHeroes of Azeroth pack\nThunderhead Hippogryph card";
+    COLLECTOR_TCG_ROBOTIC_HOMING_CHICKEN = "World of Warcraft TCG\nMarch of the Legion pack\nRobotic Homing Chicken card";
+    COLLECTOR_TCG_SPECTRAL_TIGER_CUB = "World of Warcraft TCG\nScourgewar pack\nSpectral Tiger Cub card";
+    COLLECTOR_TCG_TUSKARR_KITE = "World of Warcraft TCG\nScourgewar pack\nTuskarr Kite card";
+    COLLECTOR_TCG_RED_BEARON = "World of Warcraft TCG\nDrums of War pack\nThe Red Bearon card";
+    COLLECTOR_TCG_TINY = "World of Warcraft TCG\nScourgewar pack\nTiny card";
+    COLLECTOR_TCG_POLLO_GRANDE = "World of Warcraft TCG\nFields of Honor pack\nEl Pollo Grande card";
+    COLLECTOR_TCG_SALTWATER_SNAPJAW = "World of Warcraft TCG\nHeroes of Azeroth pack\nSaltwater Snapjaw card";
+    COLLECTOR_TCG_SPECTRAL_TIGER = "World of Warcraft TCG\nFires of Outland pack\nSpectral Tiger card";
+    COLLECTOR_TCG_SWIFT_SPECTRAL_TIGER = "World of Warcraft TCG\nFires of Outland pack\nSwift Spectral Tiger card";
+    COLLECTOR_TCG_X51_NETHER_ROCKET = "World of Warcraft TCG\nServants of the Betrayer pack\nX-51 Nether-Rocket card";
+    COLLECTOR_TCG_X51_NETHER_ROCKET_XTREME = "World of Warcraft TCG\nServants of the Betrayer pack\nX-51 Nether-Rocket X-TREME card";
+    COLLECTOR_MTN_DEW_PROMO = "US 2009 Mountain Dew promotion";
+    COLLECTOR_FAN_WEBSITES_PROMO = "European fan websites promotional gift";
+    COLLECTOR_COCA_COLA_PROMO = "Chinese Coca-cola promotional gift";
+    COLLECTOR_VANILLA_COLLECTORS_EDITION = "World of Warcraft Collector's edition gift";
+    COLLECTOR_TBC_COLLECTORS_EDITION = "Burning Crusade Collector's edition gift";
+    COLLECTOR_EURO_TBC_COLLECTORS_EDITION = "European Burning Crusade Collector's edition gift";
+    COLLECTOR_WOTLK_COLLECTORS_EDITION = "Wrath of the Lich King Collector's edition gift";
+    COLLECTOR_SC2_COLLECTORS_EDITION = "Starcraft II: Wings of Liberty Collector's edition gift";
+    COLLECTOR_BNET_TRANSFER = "Transferring to a Battle.net account in November 2009";
+    COLLECTOR_JADE_TIGER_GIVEAWAY = "Logged in during the Chinese Jade Tiger giveaway";
+    COLLECTOR_FOURTH_ANNIVERSARY = "Obtained from logging in during WoW's 4th anniversary";
+    COLLECTOR_FIFTH_ANNIVERSARY = "Obtained from logging in during WoW's 5th anniversary";
+    COLLECTOR_BLIZZCON_2005 = "Blizzcon 2005 gift";
+    COLLECTOR_BLIZZCON_2008 = "BlizzCon 2008 Welcome package";
+    COLLECTOR_BLIZZCON_2009 = "Blizzcon 2009 gift";
+    COLLECTOR_INVITATIONAL_2007 = "2007 Blizzard Worldwide Invitational gift";
+    COLLECTOR_INVITATIONAL_2008 = "2008 Blizzard Worldwide Invitational gift";
+    COLLECTOR_OLYMPICS_ASIA = "Random reward during 2008 Summer Olympics (Asia only)";
+    COLLECTOR_OLYMPICS_VICTORY = "Win a battleground during the 2008 Summer Olympics";
+    COLLECTOR_BLIZZARD_STORE = "Sold through the Blizzard store";
+    COLLECTOR_WINTER_VEIL_2007_GIFT = "Winter Veil 2007 gift";
+    COLLECTOR_PVP_TOURNAMENT_WINS = "Play 200 matches in the Arena PvP Tournament";
+    COLLECTOR_PTR_APPRECIATION = "PTR Appreciation gift";
+    COLLECTOR_REWARD_FOR_SEASON = "Reward for Season ";
+    COLLECTOR_ARENAS = " Arenas";
+    COLLECTOR_LEGACY_BREWFEST = "Reward from original Brewfest\nNo longer sold by vendors";
+    COLLECTOR_RAF_REWARD = "Reward from Recruit-A-Friend promotion";
+
+
+    COLLECTOR_UNKNOWN_ASIA = "Unknown - Promotional pet from Asia?";
+    COLLECTOR_UNKNOWN_KOREA = "Unknown, Korean only";
+
+    -- Drop mobs
+    COLLECTOR_DROP_MAGELORD = "Draconic Magelord";
+    COLLECTOR_DROP_SCALEBANE = "Blue Scalebane";
+    COLLECTOR_DROP_MAGEWEAVER = "Draconic Mageweaver";
+    COLLECTOR_DROP_SPELLSCRIBE = "Dalaran Spellscribe";
+    COLLECTOR_DROP_THEURGIST = "Dalaran Theurgist";
+    COLLECTOR_DROP_SUMMONER = "Dalaran Summoner";
+    COLLECTOR_DROP_SHIELD_GUARD = "Dalaran Shield Guard";
+    COLLECTOR_DROP_FLAMESNORTING_WHELP = "Flamesnorting Whelp";
+    COLLECTOR_DROP_CRIMSON_WHELP = "Crimson Whelp";
+    COLLECTOR_DROP_RED_WHELP = "Red Whelp";
+    COLLECTOR_DROP_SEARING_WHELP = "Searing Whelp";
+    COLLECTOR_DROP_SCALDING_WHELP = "Scalding Whelp";
+    COLLECTOR_DROP_DART = "Dart";
+    COLLECTOR_DROP_DEVIATE_RAVAGER = "Deviate Ravager";
+    COLLECTOR_DROP_DEVIATE_GUARDIAN = "Deviate Guardian";
+    COLLECTOR_DROP_DREAMING_WHELP = "Dreaming Whelp";
+    COLLECTOR_DROP_BOGFLARE_NEEDLER = "Bogflare Needler";
+    COLLECTOR_DROP_DEFIAS_PIRATE = "Defias Pirate";
+    COLLECTOR_DROP_GUNDRAK_RAPTOR = "Gundrak Raptor";
+    COLLECTOR_DROP_PRETTY_BOY_DUNCAN = "Pretty Boy Duncan";
+    COLLECTOR_DROP_BLOODSAIL_RAIDER = "Bloodsail Raider";
+    COLLECTOR_DROP_BLOODSAIL_DECKHAND = "Bloodsail Deckhand";
+    COLLECTOR_DROP_BLOODSAIL_MAGE = "Bloodsail Mage";
+    COLLECTOR_DROP_BLOODSAIL_SWABBY = "Bloodsail Swabby";
+    COLLECTOR_DROP_BLOODSAIL_SWASHBUCKLER = "Bloodsail Swashbuckler";
+    COLLECTOR_DROP_BLOODSAIL_SEA_DOG = "Bloodsail Sea Dog";
+    COLLECTOR_DROP_BLOODSAIL_WARLOCK = "Bloodsail Warlock";
+    COLLECTOR_DROP_BLOODSAIL_MAGUS = "Bloodsail Elder Magus";
+    COLLECTOR_DROP_TAKK = "Takk the Leaper";
+    COLLECTOR_DROP_KAEL_THAS = "Kael'thas Sunstrider";
+    COLLECTOR_DROP_RAVASAUR_MATRIARCH = "Ravasaur Matriarch";
+    COLLECTOR_DROP_RAZORMAW_MATRIARCH = "Razormaw Matriarch";
+    COLLECTOR_DROP_RAZZASHI_RAPTOR = "Razzashi Raptor";
+    COLLECTOR_DROP_HEADLESS_HORSEMAN = "Headless Horseman";
+    COLLECTOR_DROP_APOTHECARY_HUMMEL = "Apothecary Hummel";
+    COLLECTOR_DROP_SPRITE_DARTER = "Sprite Darter";
+    COLLECTOR_DROP_TENRIS_MIRKBLOOD = "Prince Tenris Mirkblood";
+    COLLECTOR_DROP_MALYGOS = "Malygos";
+    COLLECTOR_DROP_SARTHARION_PLUS_THREE = "Sartharion + 3 Drakes";
+    COLLECTOR_DROP_SKADI = "Skadi the Ruthless";
+    COLLECTOR_DROP_ANUBISATH_WARDER = "Anubisath Warder";
+    COLLECTOR_DROP_QIRAJI_SLAYER = "Qiraji Slayer";
+    COLLECTOR_DROP_QIRAJI_MINDSLAYER = "Qiraji Mindslayer";
+    COLLECTOR_DROP_QIRAJI_CHAMPION = "Qiraji Champion";
+    COLLECTOR_DROP_OBSIDIAN_NULLIFIER = "Obsidian Nullifier";
+    COLLECTOR_DROP_QIRAJI_LASHER = "Qiraji Lasher";
+    COLLECTOR_DROP_ANUBISATH_DEFENDER = "Anubisath Defender";
+    COLLECTOR_DROP_QIRAJI_BRAINWASHER = "Qiraji Brainwasher";
+    COLLECTOR_DROP_ANUBISATH_SENTINEL = "Anubisath Sentinel";
+    COLLECTOR_DROP_OBSIDIAN_ERADICATOR = "Obsidian Eradicator";
+    COLLECTOR_DROP_INFINITE_CORRUPTOR = "Infinite Corruptor";
+    COLLECTOR_DROP_ATTUMEN = "Attumen the Huntsman";
+    COLLECTOR_DROP_COREN_DIREBREW = "Coren Direbrew";
+    COLLECTOR_DROP_LICH_KING = "Lich King";
+    COLLECTOR_DROP_YOGGSARON_PLUS_ZERO = "Yogg-Saron + 0 Keepers";
+    COLLECTOR_DROP_ONYXIA = "Onyxia";
+    COLLECTOR_DROP_ANZU = "Anzu";
+    COLLECTOR_DROP_BARON_RIVENDARE = "Baron Rivendare";
+    COLLECTOR_DROP_BLOODLORD_MANDOKIR = "Bloodlord Mandokir";
+    COLLECTOR_DROP_HIGH_PRIEST_THEKAL = "High Priest Thekal";
+    COLLECTOR_DROP_TLPD = "Time-Lost Proto Drake";
+    COLLECTOR_DROP_ARCHAVON = "Archavon the Stone Watcher";
+    COLLECTOR_DROP_EMALON = "Emalon the Storm Watcher";
 
 --end
