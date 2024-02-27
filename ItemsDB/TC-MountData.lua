@@ -10,197 +10,197 @@ Mount spellIDs for all the mounts a player could potentially have.
 -- These are mounts that either faction can get.
 TheCollectorCommonMountTable = {
   -- Albino Drake
-  [60025]={1, 5, "Leading the Cavalry"},
+  [60025]={1, 5, COLLECTOR_LEADING_THE_CAVALRY},
 
   -- Argent Warhorse
   [67466]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Ashes of Al'ar
-  [40192]={1, 3, { {COLLECTOR_DROP_KAEL_THAS, "The Eye", "1.6"} } },
+  [40192]={1, 3, { {COLLECTOR_DROP_KAEL_THAS, COLLECTOR_THE_EYE, "1.6"} } },
 
   -- Azure Drake
-  [59567]={1, 3, { {"Malygos", "The Eye of Eternity", "1"} } },
+  [59567]={1, 3, { {COLLECTOR_DROP_MALYGOS, COLLECTOR_EYE_OF_ETERNITY, "1"} } },
 
   -- Azure Netherwing Drake
-  [41514]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41514]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Big Love Rocket
   [71342]={1, 3, { {COLLECTOR_DROP_APOTHECARY_HUMMEL, COLLECTOR_VALENTINES_DAY_SFK, "1"} } },
 
   -- Bloodbathed Frostbrood Vanquisher
-  [72808]={1, 5, "Glory of the Icecrown Raider (10)"},
+  [72808]={1, 5, COLLECTOR_GLORY_ICECROWN_RAIDER.." (10)"},
 
   -- Blue Drake
-  [59568]={1, 3, { {"Loot bag", "Oculus (random dungeon)", "1"} } },
+  [59568]={1, 3, { {COLLECTOR_LOOT_BAG, COLLECTOR_OCULUS.." ("..COLLECTOR_RANDOM_DUNGEON..")", "1"} } },
 
   -- Black Drake
-  [59650]={1, 3, { {"Sartharion + 3 Drakes", "The Obsidian Sanctum", "100"} } },
+  [59650]={1, 3, { {COLLECTOR_DROP_SARTHARION_PLUS_THREE, COLLECTOR_OBSIDIAN_SANCTUM, "100"} } },
 
   -- Blue Proto-Drake
-  [59996]={1, 3, { {"Skadi the Ruthless", "Utgarde Pinnacle (Heroic)", "1"} } },
+  [59996]={1, 3, { {COLLECTOR_DROP_SKADI, COLLECTOR_UTGARDE_PINNACLE.." ("..COLLECTOR_HEROIC..")", "1"} } },
 
   -- Blue Qiraji Battle Tank
   [25953]={1, 3, {
-                  {"Anubisath Warder",    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Qiraji Slayer",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Qiraji Mindslayer",   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Qiraji Champion",     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Obsidian Nullifier",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Qiraji Lasher",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Anubisath Defender",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
-                  {"Qiraji Brainwasher",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
-                  {"Anubisath Sentinel",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
-                  {"Obsidian Eradicator", COLLECTOR_TEMPLE_OF_AHNQIRAJ, "10"},
+                  {COLLECTOR_DROP_ANUBISATH_WARDER,    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_QIRAJI_SLAYER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_QIRAJI_MINDSLAYER,   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_QIRAJI_CHAMPION,     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_OBSIDIAN_NULLIFIER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_QIRAJI_LASHER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_ANUBISATH_DEFENDER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
+                  {COLLECTOR_DROP_QIRAJI_BRAINWASHER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
+                  {COLLECTOR_DROP_ANUBISATH_SENTINEL,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
+                  {COLLECTOR_DROP_OBSIDIAN_ERADICATOR, COLLECTOR_TEMPLE_OF_AHNQIRAJ, "10"},
                  }
           },
 
   -- Blue Riding Nether Ray
-  [39803]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", "Sha'tari Skyguard - Exalted"} } },
+  [39803]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", COLLECTOR_SHATARI_SKYGUARD_EXALTED} } },
 
   -- Bronze Drake
-  [59569]={1, 3, { {"Infinite Corruptor", "The Culling of Stratholme (Heroic) (Timed Run)", "100"} } },
+  [59569]={1, 3, { {COLLECTOR_DROP_INFINITE_CORRUPTOR, COLLECTOR_CULLING_OF_STRATHOLME.." ("..COLLECTOR_HEROIC..") ("..COLLECTOR_TIMED_RUN..")", "100"} } },
 
   -- Cenarion War Hippogryph
-  [43927]={1, 1, { {COLLECTOR_FEDRYEN_SWIFTSPEAR, "79.3, 63.8", "Zangarmarsh", "2,000g", "Cenarion Expedition - Exalted"} } },
+  [43927]={1, 1, { {COLLECTOR_FEDRYEN_SWIFTSPEAR, "79.3, 63.8", COLLECTOR_ZANGARMARSH, "2,000g", COLLECTOR_CENARION_EXPEDITION_EXALTED} } },
 
   -- Cobalt Netherwing Drake
-  [41515]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41515]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Fiery Warhorse
-  [36702]={1, 3, { {"Attumen the Huntsman", "Karazhan", "0.7"} } },
+  [36702]={1, 3, { {COLLECTOR_DROP_ATTUMEN, COLLECTOR_KARAZHAN, "0.7"} } },
 
   -- Great Brewfest Kodo
-  [49379]={1, 3, { {"Coren Direbrew", "Blackrock Depths (during Brewfest)", "4"} } },
+  [49379]={1, 3, { {COLLECTOR_DROP_COREN_DIREBREW, COLLECTOR_BREWFEST_BRD, "4"} } },
 
   -- Green Proto-Drake
-  [61294]={1, 3, { {"Mysterious Egg", "Geen (54.5, 56.2)\nSholazar Basin\n3g\nThe Oracles - Revered", "2"} } },
+  [61294]={1, 3, { {COLLECTOR_MYSTERIOUS_EGG, COLLECTOR_GEEN.." (54.5, 56.2)\n"..COLLECTOR_SHOLAZAR_BASIN.."\n3g\n"..COLLECTOR_ORACLES_REVERED, "2"} } },
 
   -- Green Qiraji Battle Tank
   [26056]={1, 3, {
-                  {"Qiraji Slayer",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
-                  {"Qiraji Mindslayer",   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
-                  {"Qiraji Lasher",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
-                  {"Anubisath Warder",    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Anubisath Defender",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Qiraji Brainwasher",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Obsidian Nullifier",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Qiraji Champion",     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
-                  {"Obsidian Eradicator", COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
-                  {"Anubisath Sentinel",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
+                  {COLLECTOR_DROP_QIRAJI_SLAYER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
+                  {COLLECTOR_DROP_QIRAJI_MINDSLAYER,   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
+                  {COLLECTOR_DROP_QIRAJI_LASHER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
+                  {COLLECTOR_DROP_ANUBISATH_WARDER,    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_ANUBISATH_DEFENDER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_QIRAJI_BRAINWASHER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_OBSIDIAN_NULLIFIER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_QIRAJI_CHAMPION,     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "13"},
+                  {COLLECTOR_DROP_OBSIDIAN_ERADICATOR, COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
+                  {COLLECTOR_DROP_ANUBISATH_SENTINEL,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
                  }
           },
 
   -- Green Riding Nether Ray
-  [39798]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", "Sha'tari Skyguard - Exalted"} } },
+  [39798]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", COLLECTOR_SHATARI_SKYGUARD_EXALTED} } },
 
   -- Headless Horseman's Mount
-  [48025]={1, 3, { {"Headless Horseman", "Scarlet Monastery (during Halloween)", "1"} } },
+  [48025]={1, 3, { {COLLECTOR_DROP_HEADLESS_HORSEMAN, COLLECTOR_HALLOWEEN_SCARLET_MONASTERY, "1"} } },
 
   -- Icebound Frostbrood Vanquisher
-  [72807]={1, 5, "Glory of the Icecrown Raider (25)"},
+  [72807]={1, 5, COLLECTOR_GLORY_ICECROWN_RAIDER.." (25)"},
 
   -- Invincible
-  [72286]={1, 7, "Lich King (25 Heroic)"},
+  [72286]={1, 7, COLLECTOR_DROP_LICH_KING.." (25 "..COLLECTOR_HEROIC..")"},
 
   -- Ironbound Proto-Drake
-  [63956]={1, 5, "Heroic: Glory of the Ulduar Raider (25)"},
+  [63956]={1, 5, COLLECTOR_HEROIC..": "..COLLECTOR_GLORY_ULDUAR_RAIDER.." (25)"},
 
   -- Mimiron's Head
-  [63796]={1, 3, { {"Yogg-Saron + 0 Keepers (Heroic)", "Ulduar", "100"} } },
+  [63796]={1, 3, { {COLLECTOR_DROP_YOGGSARON_PLUS_ZERO.." ("..COLLECTOR_HEROIC..")", COLLECTOR_ULDUAR, "100"} } },
 
   -- Onyx Netherwing Drake
-  [41513]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41513]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Onyxian Drake
-  [69395]={1, 3, { {"Onyxia", "Onyxia's Lair", "1"} } },
+  [69395]={1, 3, { {COLLECTOR_DROP_ONYXIA, COLLECTOR_ONYXIAS_LAIR, "1"} } },
 
   -- Purple Netherwing Drake
-  [41516]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41516]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Purple Riding Nether Ray
-  [39801]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", "Sha'tari Skyguard - Exalted"} } },
+  [39801]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", COLLECTOR_SHATARI_SKYGUARD_EXALTED} } },
 
   -- Raven Lord
-  [41252]={1, 3, { {"Anzu", "Sethekk Halls (Heroic)", "1"} } },
+  [41252]={1, 3, { {COLLECTOR_DROP_ANZU, COLLECTOR_SETHEKK_HALLS.." ("..COLLECTOR_HEROIC..")", "1"} } },
 
   -- Red Drake
-  [59570]={1, 1, { {COLLECTOR_CIELSTRASZA, "59.9, 53.1", COLLECTOR_DRAGONBLIGHT, "2,000g", "The Wyrmrest Accord - Exalted"} } },
+  [59570]={1, 1, { {COLLECTOR_CIELSTRASZA, "59.9, 53.1", COLLECTOR_DRAGONBLIGHT, "2,000g", COLLECTOR_WYRMREST_ACCORD_EXALTED} } },
 
   -- Red Proto-Drake
-  [59961]={1, 5, "Glory of the Hero"},
+  [59961]={1, 5, COLLECTOR_GLORY_HERO},
 
   -- Red Qiraji Battle Tank
   [26054]={1, 3, {
-                  {"Qiraji Lasher",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "2"},
-                  {"Anubisath Defender",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.9"},
-                  {"Anubisath Warder",    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.8"},
-                  {"Qiraji Brainwasher",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.7"},
-                  {"Qiraji Mindslayer",   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.7"},
-                  {"Qiraji Slayer",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.6"},
-                  {"Obsidian Nullifier",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.5"},
-                  {"Qiraji Champion",     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.5"},
-                  {"Obsidian Eradicator", COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.4"},
-                  {"Anubisath Sentinel",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.4"},
+                  {COLLECTOR_DROP_QIRAJI_LASHER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "2"},
+                  {COLLECTOR_DROP_ANUBISATH_DEFENDER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.9"},
+                  {COLLECTOR_DROP_ANUBISATH_WARDER,    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.8"},
+                  {COLLECTOR_DROP_QIRAJI_BRAINWASHER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.7"},
+                  {COLLECTOR_DROP_QIRAJI_MINDSLAYER,   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.7"},
+                  {COLLECTOR_DROP_QIRAJI_SLAYER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.6"},
+                  {COLLECTOR_DROP_OBSIDIAN_NULLIFIER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.5"},
+                  {COLLECTOR_DROP_QIRAJI_CHAMPION,     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.5"},
+                  {COLLECTOR_DROP_OBSIDIAN_ERADICATOR, COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.4"},
+                  {COLLECTOR_DROP_ANUBISATH_SENTINEL,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "1.4"},
                  }
           },
 
   -- Red Riding Nether Ray
-  [39800]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", "Sha'tari Skyguard - Exalted"} } },
+  [39800]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", COLLECTOR_SHATARI_SKYGUARD_EXALTED} } },
 
   -- Rivendare's Deathcharger
-  [17481]={1, 3, { {"Baron Rivendare", "Stratholme", "1"} } },
+  [17481]={1, 3, { {COLLECTOR_DROP_BARON_RIVENDARE, COLLECTOR_STRATHOLME, "1"} } },
 
   -- Rusted Proto-Drake
-  [63963]={1, 5, "Glory of the Ulduar Raider (10)"},
+  [63963]={1, 5, COLLECTOR_GLORY_ULDUAR_RAIDER.." (10)"},
 
   -- Sea Turtle
-  [64731]={1, 3, { {"Northrend fishing pools", "Northrend", "1"} } },
+  [64731]={1, 3, { {COLLECTOR_NORTHREND.." "..COLLECTOR_FISHING_POOLS, COLLECTOR_NORTHREND, "1"} } },
 
   -- Silver Riding Nether Ray
-  [39802]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", "Sha'tari Skyguard - Exalted"} } },
+  [39802]={1, 1, { {COLLECTOR_GRELLA, "64.3, 66.3", COLLECTOR_TEROKKAR_FOREST, "200g", COLLECTOR_SHATARI_SKYGUARD_EXALTED} } },
 
   -- Swift Brewfest Ram
-  [43900]={1, 3, { {"Coren Direbrew", "Blackrock Depths (during Brewfest)", "5"} } },
+  [43900]={1, 3, { {COLLECTOR_DROP_COREN_DIREBREW, COLLECTOR_BREWFEST_BRD, "5"} } },
 
   -- Swift Razzashi Raptor
-  [24242]={1, 3, { {"Bloodlord Mandokir", COLLECTOR_ZULGURUB, "1"} } },
+  [24242]={1, 3, { {COLLECTOR_DROP_BLOODLORD_MANDOKIR, COLLECTOR_ZULGURUB, "1"} } },
 
   -- Swift White Hawkstrider
-  [46628]={1, 3, { {"Kael'thas Sunstrider", "Magister's Terrace (Heroic)", "2"} } },
+  [46628]={1, 3, { {COLLECTOR_DROP_KAEL_THAS, COLLECTOR_MAGISTERS_TERRACE.." ("..COLLECTOR_HEROIC..")", "2"} } },
 
   -- Swift Zulian Tiger
-  [24252]={1, 3, { {"High Priest Thekal", COLLECTOR_ZULGURUB, "1"} } },
+  [24252]={1, 3, { {COLLECTOR_DROP_HIGH_PRIEST_THEKAL, COLLECTOR_ZULGURUB, "1"} } },
 
   -- Time-Lost Proto-Drake
-  [60002]={1, 3, { {"Time-Lost Proto Drake", "The Storm Peaks", "100"} } },
+  [60002]={1, 3, { {COLLECTOR_DROP_TLPD, COLLECTOR_STORM_PEAKS, "100"} } },
 
   -- Twilight Drake
-  [59571]={1, 3, { {"Sartharion + 3 Drakes", "The Obsidian Sanctum (Heroic)", "100"} } },
+  [59571]={1, 3, { {COLLECTOR_DROP_SARTHARION_PLUS_THREE, COLLECTOR_OBSIDIAN_SANCTUM.." ("..COLLECTOR_HEROIC..")", "100"} } },
 
   -- Veridian Netherwing Drake
-  [41517]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41517]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Violet Netherwing Drake
-  [41518]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", "Netherwing - Exalted"} } },
+  [41518]={1, 1, { {COLLECTOR_DRAKE_DEALER_HURLUNK, "65.6, 86", COLLECTOR_SHADOWMOON_VALLEY, "200g", COLLECTOR_NETHERWING_EXALTED} } },
 
   -- Violet Proto-Drake
-  [60024]={1, 5, "What A Long, Strange Trip It's Been"},
+  [60024]={1, 5, COLLECTOR_HOLIDAY_META},
 
   -- White Polar Bear
-  [54753]={1, 3, { {"Hyldnir Spoils", "The Storm Peaks (Brunnhildar daily quest)", "1"} } },
+  [54753]={1, 3, { {COLLECTOR_HYLDNIR_SPOILS, COLLECTOR_STORM_PEAKS.." ("..COLLECTOR_BRUNNHILDAR_DAILY..")", "1"} } },
 
   -- Yellow Qiraji Battle Tank
   [26055]={1, 3, {
-                  {"Qiraji Lasher",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "18"},
-                  {"Anubisath Warder",    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
-                  {"Qiraji Champion",     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
-                  {"Qiraji Slayer",       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
-                  {"Qiraji Mindslayer",   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
-                  {"Anubisath Defender",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Obsidian Nullifier",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Qiraji Brainwasher",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
-                  {"Anubisath Sentinel",  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
-                  {"Obsidian Eradicator", COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
+                  {COLLECTOR_DROP_QIRAJI_LASHER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "18"},
+                  {COLLECTOR_DROP_ANUBISATH_WARDER,    COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
+                  {COLLECTOR_DROP_QIRAJI_CHAMPION,     COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
+                  {COLLECTOR_DROP_QIRAJI_SLAYER,       COLLECTOR_TEMPLE_OF_AHNQIRAJ, "16"},
+                  {COLLECTOR_DROP_QIRAJI_MINDSLAYER,   COLLECTOR_TEMPLE_OF_AHNQIRAJ, "15"},
+                  {COLLECTOR_DROP_ANUBISATH_DEFENDER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_OBSIDIAN_NULLIFIER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_QIRAJI_BRAINWASHER,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "14"},
+                  {COLLECTOR_DROP_ANUBISATH_SENTINEL,  COLLECTOR_TEMPLE_OF_AHNQIRAJ, "12"},
+                  {COLLECTOR_DROP_OBSIDIAN_ERADICATOR, COLLECTOR_TEMPLE_OF_AHNQIRAJ, "11"},
                  }
           },
 };
@@ -233,13 +233,13 @@ TheCollectorAllianceMountTable = {
   [470]={1, 1, { {COLLECTOR_UNGER_STATFORTH, "8.6, 54.5", COLLECTOR_WETLANDS, "1g"} } },
 
   -- Black War Bear
-  [60118]={1, 5, "For The Alliance!"},
+  [60118]={1, 5, COLLECTOR_FOR_THE_ALLIANCE},
 
   -- Black War Elekk
   [48027]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Mammoth
-  [59785]={1, 1, { {COLLECTOR_KNIGHT_DAMERON, "51.7, 17.5", "Wintergrasp", "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
+  [59785]={1, 1, { {COLLECTOR_KNIGHT_DAMERON, "51.7, 17.5", COLLECTOR_WINTERGRASP, "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
 
   -- Black War Ram
   [22720]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
@@ -251,7 +251,7 @@ TheCollectorAllianceMountTable = {
   [22723]={1, 1, { {COLLECTOR_LIEUTENANT_KARTER, "74.7, 67.3", COLLECTOR_STORMWIND, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Blue Dragonhawk
-  [61996]={1, 5, "Mountain o' Mounts"},
+  [61996]={1, 5, COLLECTOR_MOUNTAIN_O_MOUNTS},
 
   -- Blue Mechanostrider
   [10969]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "1g"} } },
@@ -281,19 +281,19 @@ TheCollectorAllianceMountTable = {
           },
 
   -- Cobalt Riding Talbuk
-  [39315]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", "Kurenai - Exalted"} } },
+  [39315]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Cobalt War Talbuk
-  [34896]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", "Kurenai - Exalted"} } },
+  [34896]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Crusader's White Warhorse
-  [68187]={1, 5, "A Tribute to Immortality"},
+  [68187]={1, 5, COLLECTOR_TRIBUTE_TO_IMMORTALITY},
 
   -- Dark Riding Talbuk
-  [39316]={1, 1, { {COLLECTOR_ALDRAAN, "42.9, 42.5", COLLECTOR_NAGRAND, "\n70 Halaa Battle Token\n15 Halaa Research Token"} } },
+  [39316]={1, 1, { {COLLECTOR_ALDRAAN, "42.9, 42.5", COLLECTOR_NAGRAND, "\n70 "..COLLECTOR_HALAA_BATTLE_TOKEN.."\n15 "..COLLECTOR_HALAA_RESEARCH_TOKEN} } },
 
   -- Dark War Talbuk
-  [34790]={1, 1, { {COLLECTOR_ALDRAAN, "42.9, 42.5", COLLECTOR_NAGRAND, "\n100 Halaa Battle Token\n20 Halaa Research Token"} } },
+  [34790]={1, 1, { {COLLECTOR_ALDRAAN, "42.9, 42.5", COLLECTOR_NAGRAND, "\n100 "..COLLECTOR_HALAA_BATTLE_TOKEN.."\n20 "..COLLECTOR_HALAA_RESEARCH_TOKEN} } },
 
   -- Darnassian Mistsaber
   [63637]={1, 1, { {COLLECTOR_ROOK_HAWKFIST, "76.3, 19.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
@@ -314,13 +314,13 @@ TheCollectorAllianceMountTable = {
 
   -- Grand Black War Mammoth
   [61465]={1, 3, {
-                  {"Archavon the Stone Watcher", "Vault of Archavon", "1"},
-                  {"Emalon the Storm Watcher",   "Vault of Archavon", "1"},
+                  {COLLECTOR_DROP_ARCHAVON, COLLECTOR_VAULT_OF_ARCHAVON, "1"},
+                  {COLLECTOR_DROP_EMALON,   COLLECTOR_VAULT_OF_ARCHAVON, "1"},
                  }
           },
 
   -- Grand Ice Mammoth
-  [61470]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "10,000g", "The Sons of Hodir - Exalted"} } },
+  [61470]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", COLLECTOR_STORM_PEAKS, "10,000g", COLLECTOR_SONS_OF_HODIR_EXALTED} } },
 
   -- Gray Elekk
   [35710]={1, 1, { {COLLECTOR_TORALLIUS, "81.5, 52.0", COLLECTOR_EXODAR, "1g"} } },
@@ -344,7 +344,7 @@ TheCollectorAllianceMountTable = {
   [17453]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "1g"} } },
 
   -- Ice Mammoth
-  [59799]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "1,000g", "The Sons of Hodir - Revered"} } },
+  [59799]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", COLLECTOR_STORM_PEAKS, "1,000g", COLLECTOR_SONS_OF_HODIR_REVERED} } },
 
   -- Ironforge Ram
   [63636]={1, 1, { {COLLECTOR_DERRICK_BRINDLEBEARD, "76.5, 19.5", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
@@ -374,22 +374,22 @@ TheCollectorAllianceMountTable = {
   [66087]={1, 1, { {COLLECTOR_HIREN_LORESONG, "76.1, 19.6", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Silver Riding Talbuk
-  [39317]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", "Kurenai - Exalted"} } },
+  [39317]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Silver War Talbuk
-  [34898]={1, 1, { {"Trader Narasu", "54.6, 75.2", COLLECTOR_NAGRAND, "100g", "Kurenai - Exalted"} } },
+  [34898]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Snowy Gryphon
   [32240]={1, 1, { {COLLECTOR_BRUNN_FLAMEBEARD, "37.6, 56.0", COLLECTOR_SHADOWMOON_VALLEY, "50g"},
-                   {"Mei Francis",              "58.1, 42.5", COLLECTOR_DALARAN,           "50g"}, } },
+                   {COLLECTOR_MEI_FRANCIS,              "58.1, 42.5", COLLECTOR_DALARAN,           "50g"}, } },
 
   -- Spotted Frostsaber
   [10789]={1, 1, { {COLLECTOR_LELANAI, "38.3, 15.7", COLLECTOR_DARNASSUS, "1g"} } },
 
   -- Stormpike Battle Charger
   [23510]={1, 1, {
-                  {COLLECTOR_GAELDEN_HAMMERSMITH,   "44.2, 18.2", "Alterac Valley",    "50,000 "..COLLECTOR_HONOR_POINT},
-                  {COLLECTOR_THANTHALDIS_SNOWGLEAM, "39.5, 81.7", "Alterac Mountains", "50,000 "..COLLECTOR_HONOR_POINT}
+                  {COLLECTOR_GAELDEN_HAMMERSMITH,   "44.2, 18.2", COLLECTOR_ALTERAC_VALLEY,    "50,000 "..COLLECTOR_HONOR_POINT},
+                  {COLLECTOR_THANTHALDIS_SNOWGLEAM, "39.5, 81.7", COLLECTOR_ALTERAC_MOUNTAINS, "50,000 "..COLLECTOR_HONOR_POINT}
                  }
            },
 
@@ -406,7 +406,7 @@ TheCollectorAllianceMountTable = {
   [10793]={1, 1, { {COLLECTOR_LELANAI, "38.3, 15.7", COLLECTOR_DARNASSUS, "1g"} } },
 
   -- Swift Alliance Steed
-  [68057]={1, 3, { {"10 man Heroic with 50 attempts left", "Trial of the Grand Crusader", "100"} } },
+  [68057]={1, 3, { {COLLECTOR_TOGC_MOUNT_DESC, COLLECTOR_TRIAL_OF_THE_GRAND_CRUSADER, "100"} } },
 
   -- Swift Blue Gryphon
   [32242]={1, 1, { {COLLECTOR_BRUNN_FLAMEBEARD, "37.6, 56.0", COLLECTOR_SHADOWMOON_VALLEY, "100g"},
@@ -485,10 +485,10 @@ TheCollectorAllianceMountTable = {
   [23222]={1, 1, { {COLLECTOR_MILLI_FEATHERWHISTLE, "49.2, 48.0", COLLECTOR_DUN_MOROGH, "10g"} } },
 
   -- Tan Riding Talbuk
-  [39318]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", "Kurenai - Exalted"} } },
+  [39318]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Tan War Talbuk
-  [34899]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", "Kurenai - Exalted"} } },
+  [34899]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Traveler's Tundra Mammoth
   [61425]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "20,000g"} } },
@@ -503,16 +503,16 @@ TheCollectorAllianceMountTable = {
   [6898]={1, 1, { {COLLECTOR_VERON_AMBERSTILL, "63.5, 50.7", COLLECTOR_DUN_MOROGH, "1g"} } },
 
   -- White Riding Talbuk
-  [39319]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", "Kurenai - Exalted"} } },
+  [39319]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "70g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- White War Talbuk
-  [34897]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", "Kurenai - Exalted"} } },
+  [34897]={1, 1, { {COLLECTOR_TRADER_NARASU, "54.6, 75.2", COLLECTOR_NAGRAND, "100g", COLLECTOR_KURENAI_EXALTED} } },
 
   -- Winterspring Frostsaber
-  [17229]={1, 1, { {COLLECTOR_RIVERN_FROSTWIND, "49.9, 9.9", COLLECTOR_WINTERSPRING, "100g", "Wintersaber Trainers - Exalted"} } },
+  [17229]={1, 1, { {COLLECTOR_RIVERN_FROSTWIND, "49.9, 9.9", COLLECTOR_WINTERSPRING, "100g", COLLECTOR_WINTERSABER_TRAINERS_EXALTED} } },
 
   -- Wooly Mammoth
-  [59791]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "200 Emblem of Heroism"} } },
+  [59791]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "200 "..COLLECTOR_HEROISM_EMBLEM} } },
 };
 
 
@@ -544,13 +544,13 @@ TheCollectorHordeMountTable = {
   [64977]={1, 1, { {COLLECTOR_ZACARIAH_POST, "59.9, 52.6", COLLECTOR_TIRISFAL_GLADES, "1g"} } },
 
   -- Black War Bear
-  [60119]={1, 5, "For The Horde!"},
+  [60119]={1, 5, COLLECTOR_FOR_THE_HORDE},
 
   -- Black War Kodo
   [22718]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
 
   -- Black War Mammoth
-  [59788]={1, 1, { {COLLECTOR_STONE_GUARD_MUKAR, "51.7, 17.5", "Wintergrasp", "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
+  [59788]={1, 1, { {COLLECTOR_STONE_GUARD_MUKAR, "51.7, 17.5", COLLECTOR_WINTERGRASP, "300 "..COLLECTOR_STONE_KEEPERS_SHARD} } },
 
   -- Black War Raptor
   [22721]={1, 1, { {COLLECTOR_RAIDER_BORK, "37.9, 64.5", COLLECTOR_ORGRIMMAR, "50,000 "..COLLECTOR_HONOR_POINT} } },
@@ -581,22 +581,22 @@ TheCollectorHordeMountTable = {
   [6654]={1, 1, { {COLLECTOR_OGUNARO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "1g"} } },
 
   -- Cobalt Riding Talbuk
-  [39315]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
+  [39315]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Cobalt War Talbuk
-  [34896]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
+  [34896]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Crusader's Black Warhorse
-  [68188]={1, 5, "A Tribute to Immortality"},
+  [68188]={1, 5, COLLECTOR_TRIBUTE_TO_IMMORTALITY},
 
   -- Darkspear Raptor
   [63635]={1, 1, { {COLLECTOR_SAMAMBA, "76.1, 24.5", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Dark Riding Talbuk
-  [39316]={1, 1, { {COLLECTOR_COREIEL, "42.8, 42.6", COLLECTOR_NAGRAND, "\n70 Halaa Battle Token\n15 Halaa Research Token"} } },
+  [39316]={1, 1, { {COLLECTOR_COREIEL, "42.8, 42.6", COLLECTOR_NAGRAND, "\n70 "..COLLECTOR_HALAA_BATTLE_TOKEN.."\n15 "..COLLECTOR_HALAA_RESEARCH_TOKEN} } },
 
   -- Dark War Talbuk
-  [34790]={1, 1, { {COLLECTOR_COREIEL, "42.8, 42.6", COLLECTOR_NAGRAND, "\n100 Halaa Battle Token\n20 Halaa Research Token"} } },
+  [34790]={1, 1, { {COLLECTOR_COREIEL, "42.8, 42.6", COLLECTOR_NAGRAND, "\n100 "..COLLECTOR_HALAA_BATTLE_TOKEN.."\n20 "..COLLECTOR_HALAA_RESEARCH_TOKEN} } },
 
   -- Dire Wolf
   [6653]={1, 1, { {COLLECTOR_OGURANO_WOLFRUNNER, "69.3, 12.7", COLLECTOR_ORGRIMMAR, "1g"} } },
@@ -609,20 +609,20 @@ TheCollectorHordeMountTable = {
 
   -- Frostwolf Howler
   [23509]={1, 1, {
-                  {COLLECTOR_GRUNNDA_WOLFHEART, "49.0, 85.5", "Alterac Valley",    "50,000 "..COLLECTOR_HONOR_POINT},
-                  {COLLECTOR_JEKYLL_FLANDRING,  "62.8, 59.4", "Alterac Mountains", "50,000 "..COLLECTOR_HONOR_POINT},
+                  {COLLECTOR_GRUNNDA_WOLFHEART, "49.0, 85.5", COLLECTOR_ALTERAC_VALLEY,    "50,000 "..COLLECTOR_HONOR_POINT},
+                  {COLLECTOR_JEKYLL_FLANDRING,  "62.8, 59.4", COLLECTOR_ALTERAC_MOUNTAINS, "50,000 "..COLLECTOR_HONOR_POINT},
                  }
            },
 
   -- Grand Black War Mammoth
   [61467]={1, 3, {
-                  {"Archavon the Stone Watcher", "Vault of Archavon", "1"},
-                  {"Emalon the Storm Watcher",   "Vault of Archavon", "1"},
+                  {COLLECTOR_DROP_ARCHAVON, COLLECTOR_VAULT_OF_ARCHAVON, "1"},
+                  {COLLECTOR_DROP_EMALON,   COLLECTOR_VAULT_OF_ARCHAVON, "1"},
                  }
           },
 
   -- Grand Ice Mammoth
-  [61469]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "10,000g", "The Sons of Hodir - Exalted"} } },
+  [61469]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", COLLECTOR_STORM_PEAKS, "10,000g", COLLECTOR_SONS_OF_HODIR_EXALTED} } },
 
   -- Gray Kodo
   [18989]={1, 1, { {COLLECTOR_HARB_CLAWHOOF, "47.5, 58.5", COLLECTOR_MULGORE, "1g"} } },
@@ -647,7 +647,7 @@ TheCollectorHordeMountTable = {
                    {COLLECTOR_MEI_FRANCIS,   "58.1, 42.5", COLLECTOR_DALARAN,           "50g"}, } },
 
   -- Ice Mammoth
-  [59797]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", "The Storm Peaks", "1,000g", "The Sons of Hodir - Revered"} } },
+  [59797]={1, 1, { {COLLECTOR_LILLEHOFF, "66.2, 61.4", COLLECTOR_STORM_PEAKS, "1,000g", COLLECTOR_SONS_OF_HODIR_REVERED} } },
 
   -- Mechano-Hog
   [55531]={2, 4, COLLECTOR_ENGINEERING, "450"},
@@ -665,7 +665,7 @@ TheCollectorHordeMountTable = {
   [23246]={1, 1, { {COLLECTOR_ZACARIAH_POST, "59.9, 52.6", COLLECTOR_TIRISFAL_GLADES, "10g"} } },
 
   -- Red Dragonhawk
-  [61997]={1, 5, "Mountain o' Mounts" },
+  [61997]={1, 5, COLLECTOR_MOUNTAIN_O_MOUNTS},
 
   -- Red Hawkstrider
   [34795]={1, 1, { {COLLECTOR_WINAESTRA, "61.0, 54.7", COLLECTOR_EVERSONG_WOODS, "1g"} } },
@@ -680,10 +680,10 @@ TheCollectorHordeMountTable = {
   [63642]={1, 1, { {COLLECTOR_TRELLIS_MORNINGSUN, "76.3, 23.9", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL} } },
 
   -- Silver Riding Talbuk
-  [39317]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
+  [39317]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Silver War Talbuk
-  [34898]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
+  [34898]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Sunreaver Dragonhawk
   [66088]={1, 1, { {COLLECTOR_VASARIN_REDMORN, "76, 24", COLLECTOR_ICECROWN, "150 "..COLLECTOR_CHAMPION_SEAL} } },
@@ -711,7 +711,7 @@ TheCollectorHordeMountTable = {
                    {COLLECTOR_MEI_FRANCIS,   "58.1, 42.5", COLLECTOR_DALARAN,           "100g"}, } },
 
   -- Swift Horde Wolf
-  [68056]={1, 3, { {"10 man Heroic with 50 attempts left", "Trial of the Grand Crusader", "100"} } },
+  [68056]={1, 3, { {COLLECTOR_TOGC_MOUNT_DESC, COLLECTOR_TRIAL_OF_THE_GRAND_CRUSADER, "100"} } },
 
   -- Swift Olive Raptor
   [23242]={1, 1, { {COLLECTOR_ZJOLNIR, "55.2, 75.6", COLLECTOR_DUROTAR, "10g"} } },
@@ -750,10 +750,10 @@ TheCollectorHordeMountTable = {
                    {COLLECTOR_MEI_FRANCIS,   "58.1, 42.5", COLLECTOR_DALARAN,           "100g"}, } },
 
   -- Tan Riding Talbuk
-  [39318]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
+  [39318]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Tan War Talbuk
-  [34899]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
+  [34899]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Tawny Wind Rider
   [32243]={1, 1, { {COLLECTOR_DAMA_WILDMANE, "29.2, 29.5", COLLECTOR_SHADOWMOON_VALLEY, "50g"},
@@ -772,7 +772,7 @@ TheCollectorHordeMountTable = {
   [10796]={1, 1, { {COLLECTOR_ZJOLNIR, "55.2, 75.6", COLLECTOR_DUROTAR, "1g"} } },
 
   -- Venomhide Ravasaur
-  [64659]={1, 2, "They Grow Up So Fast"},
+  [64659]={1, 2, COLLECTOR_THEY_GROW_UP_SO_FAST},
 
   -- Violet Raptor
   [10799]={1, 1, { {COLLECTOR_ZJOLNIR, "55.2, 75.6", COLLECTOR_DUROTAR, "1g"} } },
@@ -781,16 +781,16 @@ TheCollectorHordeMountTable = {
   [64657]={1, 1, { {COLLECTOR_HARB_CLAWHOOF, "47.5, 58.5", COLLECTOR_MULGORE, "1g"} } },
 
   -- White Riding Talbuk
-  [39319]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", "The Mag'har - Exalted"} } },
+  [39319]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "70g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- White Skeletal Warhorse
   [65645]={1, 1, { {COLLECTOR_ELIZA_KILLIAN, "76.5, 24.2", COLLECTOR_ICECROWN, "500g, 5 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- White War Talbuk
-  [34897]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", "The Mag'har - Exalted"} } },
+  [34897]={1, 1, { {COLLECTOR_PROVISIONER_NASELA, "53.5, 36.9", COLLECTOR_NAGRAND, "100g", COLLECTOR_MAGHAR_EXALTED} } },
 
   -- Wooly Mammoth
-  [59793]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "200 Emblem of Heroism"} } },
+  [59793]={1, 1, { {COLLECTOR_MEI_FRANCIS, "58.1, 42.5", COLLECTOR_DALARAN, "200 "..COLLECTOR_HEROISM_EMBLEM} } },
 };
 
 
@@ -801,10 +801,10 @@ TheCollectorAlliancePaladinMountTable = {
   [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Charger
-  [23214]={1, 7, "Trained at any Paladin trainer\nRequires Level 60"},
+  [23214]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_PALADIN..COLLECTOR_TRAINER_REQUIRES_LEVEL.."60"},
 
   -- Warhorse
-  [13819]={1, 7, "Trained at any Paladin trainer\nRequires Level 30"},
+  [13819]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_PALADIN..COLLECTOR_TRAINER_REQUIRES_LEVEL.."30"},
 };
 
 
@@ -815,10 +815,10 @@ TheCollectorHordePaladinMountTable = {
   [66906]={1, 1, { {COLLECTOR_DAME_EVNIKI_KAPSALIS, "69.4, 23.2", COLLECTOR_ICECROWN, "100 "..COLLECTOR_CHAMPION_SEAL"} } },
 
   -- Charger
-  [34767]={1, 7, "Trained at any Paladin trainer\nRequires Level 60"},
+  [34767]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_PALADIN..COLLECTOR_TRAINER_REQUIRES_LEVEL.."60"},
 
   -- Warhorse
-  [34769]={1, 7, "Trained at any Paladin trainer\nRequires Level 30"},
+  [34769]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_PALADIN..COLLECTOR_TRAINER_REQUIRES_LEVEL.."30"},
 };
 
 
@@ -826,10 +826,10 @@ TheCollectorHordePaladinMountTable = {
 -- These are mounts that are only available to Warlocks.
 TheCollectorWarlockMountTable = {
   -- Dreadsteed
-  [23161]={1, 7, "Trained at any Warlock trainer\nRequires Level 60"},
+  [23161]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_WARLOCK..COLLECTOR_TRAINER_REQUIRES_LEVEL.."60"},
 
   -- Felsteed
-  [5784]={1, 7, "Trained at any Warlock trainer\nRequires Level 30"},
+  [5784]={1, 7, COLLECTOR_TRAINED_AT_ANY..COLLECTOR_WARLOCK..COLLECTOR_TRAINER_REQUIRES_LEVEL.."30"},
 };
 
 
@@ -837,7 +837,7 @@ TheCollectorWarlockMountTable = {
 -- These are mounts that are only available to Death Knights.
 TheCollectorDeathKnightMountTable = {
   -- Archerus Deathcharger
-  [48778]={1, 7, "Reward from quest Into the Realm of Shadows"},
+  [48778]={1, 7, COLLECTOR_INTO_THE_REALM_OF_SHADOWS},
 
   -- Winged Steed of the Ebon Blade
   [54729]={1, 1, { {COLLECTOR_DREAD_COMMANDER_THALANOR, "84.1, 49.9", COLLECTOR_EASTERN_PLAGUELANDS, "1,000g"} } },
@@ -862,7 +862,7 @@ TheCollectorTailorMountTable = {
   [61451]={2, 4, COLLECTOR_TAILORING, "410"},
 
   -- Frost Flying Carpet
-  [75596]={1, 1, { {"Frozo the Renowned", "40.12, 28.05", COLLECTOR_DALARAN, "6 Frozen Orb"} } },
+  [75596]={1, 1, { {COLLECTOR_FROZO_RENOWNED, "40.12, 28.05", COLLECTOR_DALARAN, "6 "..COLLECTOR_FROZEN_ORB} } },
 
   -- Magnificent Flying Carpet
   [61309]={2, 4, COLLECTOR_TAILORING, "425"},
@@ -878,136 +878,136 @@ TheCollectorTailorMountTable = {
 -- We put them here so it doesn't spew warnings about missing mounts for these.
 TheCollectorSpecialMountTable = {
   -- Amani War Bear
-  [43688]={1, 7, "Zul'Aman (Timed run)\nRemoved in 3.0"},
+  [43688]={1, 7, COLLECTOR_ZULAMAN.." ("..COLLECTOR_TIMED_RUN..")\n"..COLLECTOR_REMOVED_IN.."3.0"},
 
   -- Ancient Frostsaber
-  [16056]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16056]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Arctic Wolf
-  [16081]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16081]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Big Battle Bear
-  [51412]={1, 7, "World of Warcraft TCG\nDrums of War pack\nThe Red Bearon card"},
+  [51412]={1, 7, COLLECTOR_TCG_RED_BEARON},
 
   -- Big Blizzard Bear
-  [58983]={3, 7, "BlizzCon 2008 Welcome package"},
+  [58983]={3, 7, COLLECTOR_BLIZZCON_2008},
 
   -- Black Proto-Drake
-  [59976]={1, 7, "Reward from Glory of the Raider (Heroic)\nRemoved in 3.1"},
+  [59976]={1, 7, COLLECTOR_GLORY_RAIDER.." ("..COLLECTOR_HEROIC..")\n"..COLLECTOR_REMOVED_IN.."3.1"},
 
   -- Black Qiraji Battle Tank
-  [26656]={1, 2, "Bang a Gong!"},
+  [26656]={1, 2, COLLECTOR_BANG_A_GONG},
 
   -- Black Ram
-  [17461]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [17461]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Brewfest Ram
-  [43899]={1, 7, "Reward from original Brewfest\nNo longer sold by vendors"},
+  [43899]={1, 7, COLLECTOR_LEGACY_BREWFEST},
 
   -- Brutal Nether Drake
-  [58615]={1, 7, "Reward for Season 4 Arenas"},
+  [58615]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."4"..COLLECTOR_ARENAS},
 
   -- Celestial Steed
-  [75614]={1, 7, "Blizzard Store"},
+  [75614]={1, 7, COLLECTOR_BLIZZARD_STORE},
 
   -- Deadly Gladiator's Frostwyrm
-  [64927]={1, 7, "Reward for Season 5 Arenas"},
+  [64927]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."5"..COLLECTOR_ARENAS},
 
   -- Frost Ram
-  [17460]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [17460]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Furious Gladiator's Frostwyrm
-  [65439]={1, 7, "Reward for Season 6 Arenas"},
+  [65439]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."6"..COLLECTOR_ARENAS},
 
   -- Green Kodo
-  [18991]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [18991]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Icy Blue Mechanostrider Mod A
-  [17459]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [17459]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Ivory Raptor
-  [17450]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [17450]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Little Ivory Raptor
-  [68769]={1, 7, "World of Warcraft TCG\nScourgewar pack\nTiny card"},
+  [68769]={1, 7, COLLECTOR_TCG_TINY},
 
   -- Little White Stallion
-  [68768]={1, 7, "World of Warcraft TCG\nScourgewar pack\nTiny card"},
+  [68768]={1, 7, COLLECTOR_TCG_TINY},
 
   -- Magic Rooster
-  [65917]={1, 7, "World of Warcraft TCG\nFields of Honor pack\nEl Pollo Grande card"},
+  [65917]={1, 7, COLLECTOR_TCG_POLLO_GRANDE},
 
   -- Merciless Nether Drake
-  [44744]={1, 7, "Reward for Season 2 Arenas"},
+  [44744]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."2"..COLLECTOR_ARENAS},
 
   -- Mottled Red Raptor
-  [16084]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16084]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Nightsaber
-  [16055]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16055]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Palomino
-  [16082]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16082]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Plagued Proto-Drake
-  [60021]={1, 7, "Reward from Glory of the Raider\nRemoved in 3.1"},
+  [60021]={1, 7, COLLECTOR_GLORY_RAIDER.."\n"..COLLECTOR_REMOVED_IN.."3.1"},
 
   -- Red Wolf
-  [16080]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16080]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Relentless Gladiator's Frostwyrm
-  [67336]={1, 7, "Reward for Season 7 Arenas"},
+  [67336]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."7"..COLLECTOR_ARENAS},
 
   -- Riding Turtle
-  [30174]={1, 7, "World of Warcraft TCG\nHeroes of Azeroth pack\nSaltwater Snapjaw card"},
+  [30174]={1, 7, COLLECTOR_TCG_SALTWATER_SNAPJAW},
 
   -- Spectral Tiger
-  [42776]={1, 7, "World of Warcraft TCG\nFires of Outland pack\nSpectral Tiger card"},
+  [42776]={1, 7, COLLECTOR_TCG_SPECTRAL_TIGER},
 
   -- Swift Nether Drake
-  [37015]={1, 7, "Reward for Season 1 Arenas"},
+  [37015]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."1"..COLLECTOR_ARENAS},
 
   -- Swift Spectral Tiger
-  [42777]={1, 7, "World of Warcraft TCG\nFires of Outland pack\nSwift Spectral Tiger card"},
+  [42777]={1, 7, COLLECTOR_TCG_SWIFT_SPECTRAL_TIGER},
 
   -- Swift Zhevra
-  [49322]={1, 7, "Reward from Recruit-A-Friend promotion"},
+  [49322]={1, 7, COLLECTOR_RAF_REWARD},
 
   -- Teal Kodo
-  [18992]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [18992]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Vengeful Nether Drake
-  [49193]={1, 7, "Reward for Season 3 Arenas"},
+  [49193]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."3"..COLLECTOR_ARENAS},
 
   -- White Stallion
-  [16083]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [16083]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- White Mechanostrider Mod B
-  [15779]={1, 7, "Old-style armorless epic mount\nNo longer sold by vendors"},
+  [15779]={1, 7, COLLECTOR_LEGACY_EPIC_MOUNT},
 
   -- Wrathful Gladiator's Frost Wyrm
-  [71810]={1, 7, "Reward for Season 8 Arenas"},
+  [71810]={1, 7, COLLECTOR_REWARD_FOR_SEASON.."8"..COLLECTOR_ARENAS},
 
   -- X-51 Nether-Rocket
-  [46197]={1, 7, "World of Warcraft TCG\nServants of the Betrayer pack\nX-51 Nether-Rocket card"},
+  [46197]={1, 7, COLLECTOR_TCG_X51_NETHER_ROCKET},
 
   -- X-51 Nether-Rocket X-TREME
-  [46199]={1, 7, "World of Warcraft TCG\nServants of the Betrayer pack\nX-51 Nether-Rocket X-TREME card"},
+  [46199]={1, 7, COLLECTOR_TCG_X51_NETHER_ROCKET_XTREME},
 
   -- 3.3.3 unknown locations
   -- Blazing Hippogryph
-  [74856]={1, 7, "Unknown"},
+  [74856]={1, 7, COLLECTOR_UNKNOWN},
 
   -- Celestial Steed
-  [76153]={1, 7, "Unknown"},
+  [76153]={1, 7, COLLECTOR_UNKNOWN},
 
   -- Crimson Deathcharger
-  [73313]={1, 7, "Unknown"},
+  [73313]={1, 7, COLLECTOR_UNKNOWN},
 
   -- Wooly White Rhino
-  [74918]={1, 7, "Unknown"},
+  [74918]={1, 7, COLLECTOR_UNKNOWN},
 
   -- X-53 Touring Rocket
-  [76154]={1, 7, "Unknown"},
+  [76154]={1, 7, COLLECTOR_UNKNOWN},
 
 };

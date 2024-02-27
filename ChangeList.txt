@@ -1,3 +1,6 @@
+v0.8.0 (Feb 26, 2024)
+  - Move strings in mount DB to locale file.
+
 v0.7.9 (Feb 26, 2024)
   - Move strings in companion DB to locale file.
 
